@@ -1,109 +1,76 @@
 import React from "react";
 import Clamp from "../Clamp";
+import { HiCheckCircle } from "react-icons/hi2";
 
 const Welcome = () => {
-  const locationAccess = localStorage.getItem("location", location);
-
-  console.log("this is location", locationAccess);
+  const locationAccess = typeof window !== "undefined" ? localStorage.getItem("location") : null;
 
   return (
-    <div className="bg-white padding-x py-[100px]">
-      <h1
-        className="font-semibold text-black py-4 text-center"
-        style={{ fontSize: Clamp(1.5, 2.5) }}
-      >
-        Your Health, Our Priority <br /> – Welcome to Valleyview Medical Centre
-      </h1>
-      <div className=" text-black flex flex-col xl:flex-row gap-10 bg-white p-5 xl:p-10 rounded-xl shadow-2xl">
-        <div className="w-full xl:w-[50%] flex flex-col gap-5">
-          <p className="text-[16px] xl:text-[18px] text-blue-600 bg-blue-100 w-auto xl:w-[350px] p-[5px] text-center rounded-3xl">
-            Your health connected with care!
-          </p>
-          {locationAccess === "Whitby" ? (
-            <img
-              src="/images/reception.jpg"
-              alt=""
-              className="w-full xl:w-[50%] object-cover block xl:hidden h-[300px] md:h-[400px] rounded-2xl"
-            />
-          ) : (
-            <img
-              src="/images/oshawa-rec.jpeg"
-              alt=""
-              className="w-full xl:w-[50%] object-cover block xl:hidden h-[300px] md:h-[400px] rounded-2xl"
-            />
-          )}
-          <div
-            style={{ fontSize: Clamp(0.75, 1) }}
-            className="flex flex-col gap-4 text-gray-700"
-          >
-            <p>
-              At Valleyview Medical Centre, your health and well-being are at
-              the heart of everything we do. As you step into our modern,
-              state-of-the-art facility, you’ll be greeted by a team of
-              dedicated healthcare professionals committed to providing
-              exceptional medical care with a personal touch.
-            </p>
-            <p>
-              We believe in empowering you with knowledge, supporting your
-              medical decisions, and guiding you toward a healthier life.
-              Whether you&apos;re visiting for a routine check-up, specialized
-              treatment, or urgent care, our experienced doctors and
-              compassionate staff are here to assist you every step of the way.
-            </p>
-            <h2 className="font-bold" style={{ fontSize: Clamp(1, 1.5) }}>
-              Comprehensive & Patient-Focused Care
-            </h2>
-            <p>
-              At Valleyview Medical Centre, we are dedicated to delivering the
-              highest standard of healthcare in a comfortable and welcoming
-              environment. Our clinic is designed with your convenience in mind,
-              offering:
-            </p>
-            <ul className="text-[14px]">
-              <li>
-                ● Advanced technology for accurate diagnostics and effective
-                treatment.
-              </li>
-              <li>● Personalized care tailored to your unique health needs.</li>
-              <li>
-                ● On-site pharmacy to make it easier for you to access
-                prescriptions.
-              </li>
-              <li>
-                ● Modern facilities to ensure a seamless and stress-free
-                experience.
-              </li>
-            </ul>
-            <h2 className="font-bold" style={{ fontSize: Clamp(1, 1.5) }}>
-              A Commitment to Your Well-Being
-            </h2>
-            <p>
-              From our cozy waiting areas to our well-equipped examination
-              rooms, every aspect of our clinic is designed with your comfort
-              and care in mind. We take the time to listen, understand, and
-              provide healthcare solutions that best suit your needs.
-            </p>
-            <p>
-              Thank you for choosing Valleyview Medical Centre—where your health
-              is our mission, and your trust is our privilege.
-            </p>
-          </div>
-        </div>
-        {locationAccess === "Whitby" ? (
-          <img
-            src="/images/reception.jpg"
-            alt=""
-            className="w-full xl:w-[50%] object-cover hidden xl:block rounded-xl"
-          />
-        ) : (
-          <img
-            src="/images/oshawa-rec.jpeg"
-            alt=""
-            className="w-full xl:w-[50%] object-cover hidden xl:block rounded-xl"
-          />
-        )}
+    <section className="relative bg-gradient-to-b from-green-50 to-white py-[100px] padding-x">
+      {/* Heading */}
+      <div className="text-center max-w-4xl mx-auto mb-16">
+        <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+          Caring for Your Health, Every Step of the Way
+        </span>
+        <h1 className="font-bold text-gray-900 leading-snug" style={{ fontSize: Clamp(2, 3) }}>
+          Welcome to <span className="text-green-600">Valleyview Medical Centre</span>
+        </h1>
+        <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">
+          We combine compassionate care with cutting-edge medical expertise to keep you and your family healthy.
+        </p>
       </div>
-    </div>
+
+      {/* Content Grid */}
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
+        {/* Text Content */}
+        <div className="flex flex-col gap-6 text-gray-700">
+          <p className="text-[16px] md:text-[17px] leading-relaxed">
+            At Valleyview Medical Centre, your well-being is at the heart of everything we do. Whether you need a routine check-up or urgent care, our dedicated doctors and staff
+            are ready to provide the best healthcare experience.
+          </p>
+
+          <h2 className="font-semibold text-gray-900" style={{ fontSize: Clamp(1.1, 1.5) }}>
+            Why Patients Trust Us
+          </h2>
+
+          {/* Feature Cards */}
+          <div className="grid gap-4">
+            {[
+              "Advanced technology for accurate diagnostics and effective treatment",
+              "Personalized care tailored to your unique health needs",
+              "On-site pharmacy for convenient prescriptions",
+              "Modern facilities designed for comfort and ease",
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3 bg-white rounded-xl shadow-md p-4">
+                <HiCheckCircle className="w-6 h-6 text-green-600 mt-1 shrink-0" />
+                <span className="text-[15px] md:text-[16px] leading-relaxed">{item}</span>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="font-semibold text-gray-900 mt-6" style={{ fontSize: Clamp(1.1, 1.5) }}>
+            Our Commitment
+          </h2>
+          <p className="text-[15px] md:text-[16px] leading-relaxed">
+            From our welcoming reception to state-of-the-art exam rooms, every detail is designed for your comfort. We listen, we care, and we partner with you to achieve lasting
+            health.
+          </p>
+        </div>
+
+        {/* Image Section with Card Effect */}
+        <div className="relative">
+          <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition duration-300">
+            {locationAccess === "Whitby" ? (
+              <img src="/images/reception.jpg" alt="Whitby Clinic Reception" className="w-full h-[350px] md:h-[500px] object-cover" />
+            ) : (
+              <img src="/images/oshawa-rec.jpeg" alt="Oshawa Clinic Reception" className="w-full h-[350px] md:h-[500px] object-cover" />
+            )}
+          </div>
+          {/* Decorative element */}
+          <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-green-100 rounded-full blur-2xl opacity-50"></div>
+        </div>
+      </div>
+    </section>
   );
 };
 

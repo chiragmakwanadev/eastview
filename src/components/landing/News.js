@@ -1,102 +1,86 @@
-import Banner from "@/components/Banner";
+import React, { useState } from "react";
+import Link from "next/link";
 import Clamp from "@/components/Clamp";
 import { Newsdata } from "@/static/NewsData";
-import Head from "next/head";
-import Link from "next/link";
-import React, { useState } from "react";
 
-const Index = () => {
+const NewsSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3;
+  const itemsPerPage = 7;
   const totalPages = Math.ceil(Newsdata.length / itemsPerPage);
 
-  const currentItems = Newsdata.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
+  const currentItems = Newsdata.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
-  const truncateText = (text) => {
+  const truncateText = (text, wordLimit = 25) => {
     const words = text.split(" ");
-    return words.length > 25 ? `${words.slice(0, 25).join(" ")}...` : text;
+    return words.length > wordLimit ? `${words.slice(0, wordLimit).join(" ")}...` : text;
   };
 
-  const handleNextPage = () => {
-    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
-  };
+  const handlePageChange = (page) => setCurrentPage(page);
 
-  const handlePreviousPage = () => {
-    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
-  };
+  const featured = currentItems[0];
+  const others = currentItems.slice(1);
 
   return (
-    <>
-      <div style={{ paddingTop: Clamp(3.7, 7.5) }} className="bg-[#c4cad0]">
-        <div className="flex flex-col gap-2 items-center">
-          <h1 className="text-[16px] xl:text-[18px] text-white bg-black w-auto xl:w-[350px] p-[5px] text-center rounded-3xl">
-            The Latest Blog & News
-          </h1>
-          <p className="text-[16px] font-medium ">
-            Updates, policy changes, and other newsworthy items from Valleyview
-            Medical Centre
-          </p>
-        </div>
-        <div className="padding-x py-[50px]">
-          <div className="flex flex-row flex-wrap justify-center w-full gap-6">
-            {currentItems.map((news) => (
-              <div
-                key={news.id}
-                className="bg-white backdrop-blur-sm p-8 shadow-lg rounded-lg min-w-[100%] md:min-w-[320px] w-full md:w-[31%] h-auto flex flex-col justify-between hover:transf"
-              >
-                <div className="flex flex-col gap-3">
-                  <p className="text-gray-500 text-sm pb-2">{news.date}</p>
-                  <span className="text-[12px] text-white bg-blue-700 w-[250px] px-5 py-2 text-center rounded-3xl">
-                    {news.tag}
-                  </span>
-                  <h2
-                    className="font-bold text-black my-2"
-                    style={{ fontSize: Clamp(1, 1.5) }}
-                  >
-                    {news.title}
-                  </h2>
-                </div>
-                <p className="text-[16px] mb-4">
-                  {truncateText(news.description)}
-                </p>
-                <Link href={`/news/${news.id}`} className="w-full">
-                  <button
-                    className="bg-transparent text-black border-black border-[1px]
-                   px-4 py-2 rounded-full mt-[40px] w-full hover:bg-black hover:border-black hover:text-white duration-200"
-                  >
-                    Read More
-                  </button>
+    <section className="bg-gray-50 py-20">
+      {/* Header */}
+      <div className="text-center mb-16">
+        <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">Valleyview Updates</span>
+        <h2 className="font-extrabold text-gray-900 leading-snug" style={{ fontSize: Clamp(1.7, 2.8) }}>
+          Latest Health Insights & News
+        </h2>
+        <p className="text-gray-600 mt-3 text-[15px] md:text-[17px] max-w-2xl mx-auto leading-relaxed">
+          Discover recent articles, health tips, and clinic updates from Valleyview Medical Centre.
+        </p>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-5 flex flex-col gap-16">
+        {/* Featured Article */}
+        {featured && (
+          <div className="relative w-full rounded-3xl overflow-hidden shadow-lg group cursor-pointer hover:scale-105 transition-transform duration-300">
+            <div className="h-96 bg-gray-300 flex items-center justify-center text-gray-900 font-bold text-2xl md:text-4xl text-center p-6">{featured.title}</div>
+            <div className="absolute bottom-4 left-4 text-white text-sm bg-black bg-opacity-40 px-3 py-1 rounded-md">{featured.date}</div>
+            <Link href={`/news/${featured.id}`} className="absolute bottom-4 right-4">
+              <button className="bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-lg transition duration-200">Read More</button>
+            </Link>
+          </div>
+        )}
+
+        {/* Other Articles - Masonry Style */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+          {others.map((news) => (
+            <div
+              key={news.id}
+              className="break-inside-avoid relative bg-white rounded-2xl shadow-md overflow-hidden mb-6 group hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div className="h-64 bg-gray-200 flex items-center justify-center font-semibold text-gray-900 text-lg md:text-xl text-center p-4">{news.title}</div>
+              <div className="p-5 flex flex-col gap-2">
+                <p className="text-gray-700 text-sm leading-relaxed">{truncateText(news.description, 20)}</p>
+                <p className="text-gray-400 text-xs">{news.date}</p>
+                <Link href={`/news/${news.id}`} className="mt-3">
+                  <button className="w-full bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg transition duration-200">Read More</button>
                 </Link>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
 
-          <div
-            className="flex justify-start md:justify-center mt-8 gap-4"
-            style={{ fontSize: Clamp(1, 1.15) }}
-          >
+        {/* Pagination */}
+        <div className="flex justify-center mt-12 gap-3">
+          {Array.from({ length: totalPages }).map((_, idx) => (
             <button
-              onClick={handlePreviousPage}
-              disabled={currentPage === 1}
-              className="px-2 md:px-4 py-1 md:py-2 bg-white text-black rounded disabled:opacity-50"
+              key={idx}
+              onClick={() => handlePageChange(idx + 1)}
+              className={`px-4 py-2 rounded-lg border font-medium ${
+                currentPage === idx + 1 ? "bg-green-700 text-white border-green-700" : "bg-white text-gray-700 hover:bg-gray-200 border-gray-300"
+              }`}
             >
-              Previous
+              {idx + 1}
             </button>
-            <button
-              onClick={handleNextPage}
-              disabled={currentPage === totalPages}
-              className="px-2 md:px-4 py-1 md:py-2 bg-white text-black rounded disabled:opacity-50"
-            >
-              Next
-            </button>
-          </div>
+          ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
-export default Index;
+export default NewsSection;

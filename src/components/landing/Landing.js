@@ -2,167 +2,119 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Clamp from "../Clamp";
 import { DiCssdeck } from "react-icons/di";
-import { GoDotFill } from "react-icons/go";
-import { LiaDotCircleSolid } from "react-icons/lia";
-import { IoIosArrowUp } from "react-icons/io";
 import { useRouter } from "next/router";
 
 const linkData = [
-  {
-    href: "https://www.bookmyrefill.com/new/9054351100",
-    text: "New Prescription",
-  },
-  {
-    href: "https://www.bookmyrefill.com/refill/9054351100",
-    text: "Refill Prescription",
-  },
-  {
-    href: "https://www.bookmypharmacy.com/transfer/9054351100",
-    text: "Transfer Prescription",
-  },
-  {
-    href: "https://www.bookmyshot.com/flu/9054351100",
-    text: "Book Flu Shot",
-  },
-  {
-    href: "https://www.bookmypharmacy.com/minorailment/9054351100",
-    text: "Minor Ailments",
-  },
-  {
-    href: "https://www.bookmyshot.com/(905)435-1100",
-    text: "Visit Website",
-  },
+  { href: "https://www.bookmyrefill.com/new/9054351100", text: "New Prescription" },
+  { href: "https://www.bookmyrefill.com/refill/9054351100", text: "Refill Prescription" },
+  { href: "https://www.bookmypharmacy.com/transfer/9054351100", text: "Transfer Prescription" },
+  { href: "https://www.bookmyshot.com/flu/9054351100", text: "Book Flu Shot" },
+  { href: "https://www.bookmypharmacy.com/minorailment/9054351100", text: "Minor Ailments" },
+  { href: "https://www.bookmyshot.com/(905)435-1100", text: "Visit Website" },
 ];
 
-const cityOptions = [
-  { name: "Whitby", display: "(Dundas)" },
-  { name: "Oshawa", display: "(Harmony)" },
-];
-
-const Landing = ({ location }) => {
+const Landing = () => {
   const [activeCity, setActiveCity] = useState("Whitby");
   const router = useRouter();
 
   const handleCityChange = (city) => {
     localStorage.setItem("location", city);
     setActiveCity(city);
-    router.push({
-      pathname: router.pathname,
-      query: { location: city },
-    });
+    router.push({ pathname: router.pathname, query: { location: city } });
   };
 
   useEffect(() => {
     const savedCity = localStorage.getItem("location");
-    setActiveCity(savedCity);
+    if (savedCity) setActiveCity(savedCity);
   }, []);
 
   return (
-    <div className="w-full relative">
-      {activeCity === "Whitby" ? (
-        <img
-          src="/images/landing3.jpg"
-          alt=""
-          className="w-full object-cover h-[92vh]"
-        />
-      ) : (
-        <img
-          src="/images/landing.jpeg"
-          alt=""
-          className="w-full object-cover h-[92vh]"
-        />
-      )}
-      <div className="absolute bottom-[45%] md:bottom-[30%] xl:bottom-[22%] left-[20px] xl:left-[50px] flex flex-col justify-center text-white gap-5">
-        <div className="flex flex-col gap-6 xl:gap-4">
-          <p className="flex items-center  text-[16px] xl:text-[20px] gap-3">
-            <DiCssdeck size={30} />
-            Consult top doctors in Durham Region.
-          </p>
-        </div>
-        <h1
-          className={`font-semibold`}
-          style={{ fontSize: Clamp(2.4, 4.6), lineHeight: Clamp(2.5, 4.6) }}
-        >
-          WELCOME TO VALLEYVIEW <br /> MEDICAL CENTRE ({activeCity})
-        </h1>
-        <p className="text-[24px]" style={{ fontSize: Clamp(1, 1.5) }}>
-          Your health connected with care!
-        </p>
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-2 w-full">
-          {cityOptions.map(({ name, display }) => (
-            <button
-              key={name}
-              onClick={() => handleCityChange(name)}
-              className={`py-[5px] rounded-full border-[1px] text-[18px] 
-                ${activeCity === name ? "bg-white text-black" : "bg-transparent text-white hover:bg-white hover:text-black"} 
-                border-white duration-200 flex flex-col items-center justify-center w-[200px]`}
-            >
-              <h2>{name}</h2>
-              <h6 className="text-[14px]">{display}</h6>
-            </button>
-          ))}
-        </div>
-      </div>
-      <div className="xl:absolute bottom-[-120px] xl:bottom-[-70px] right-0 xl:right-[7%] left-0 xl:left-[7%] bg-white p-[30px] rounded-none xl:rounded-[10px] shadow-xl">
-        <div className="flex flex-col">
-          <h1
-            className="font-medium text-black text-center"
-            style={{ fontSize: Clamp(1, 1.5) }}
-          >
-            EAST <span className="uppercase">{activeCity}</span> IDA PHARMACY
-          </h1>
-        </div>
-        <div className="flex pt-[20px] gap-3 xl:gap-2 w-full justify-center">
+    <div className="w-full min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50">
+      {/* Hero Section */}
+      <div className="relative flex items-center min-h-screen">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-40">
           <div
-            className={`flex flex-row flex-wrap gap-2 font-medium items-center justify-center`}
-            style={{ fontSize: Clamp(0.75, 1) }}
-          >
-            {activeCity === "Whitby" ? (
-              <>
-                {linkData.map(({ href, text }, index) => (
-                  <Link
-                    key={index}
-                    href={href}
-                    className="flex items-center justify-center text-center w-full md:w-auto"
-                  >
-                    <h1
-                      className="bg-red-700 border-transparent hover:bg-red-600
-              px-[20px] py-[10px] text-white hover:text-white rounded-full
-              border-[1px] duration-200 
-              gap-2 text-[16px] w-full md:w-auto"
-                    >
-                      {text}
-                    </h1>
-                  </Link>
-                ))}
-              </>
-            ) : (
-              <div className="flex items-center gap-4 flex-wrap justify-center">
-                <div className="flex items-center gap-2">
-                  <h2 className="text-[16px] text-red-400">Call Us:</h2>
-                  <Link href="tel:+19053678510" className="hover:text-red-600">
-                    +1 905-367-8510
-                  </Link>
-                </div>{" "}
-                |
-                <div className="flex items-center gap-2">
-                  <h2 className="text-[16px] text-red-400">Fax Us:</h2>
-                  <li className="list-none">
-                    FAX US: <span className="font-semibold">289-764-1231</span>
-                  </li>
-                </div>{" "}
-                |
-                <div className="flex items-center gap-2">
-                  <h2 className="text-[16px] text-red-400">Email Us:</h2>
-                  <Link
-                    href="mailto:info@valleyviewmedical.ca"
-                    className="hover:text-red-600"
-                  >
-                    valleyviewharmony@gmail.com
-                  </Link>
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            }}
+          ></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Column */}
+            <div className="space-y-8">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
+                <DiCssdeck size={20} />
+                Durham Region Healthcare
+              </div>
+
+              {/* Main Heading */}
+              <div className="space-y-4">
+                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+                  Welcome to <span className="text-green-600">Valleyview</span>
+                  <br />
+                  Medical Centre
+                </h1>
+                <p className="text-xl text-gray-600 leading-relaxed">Your health connected with care. Professional medical services in the heart of Durham Region.</p>
+              </div>
+
+              {/* CTA */}
+              <div className="pt-4">
+                <p className="text-gray-600">Providing comprehensive healthcare services in the Durham Region</p>
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className="space-y-8">
+              {/* Location Card */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-lg font-semibold text-gray-900">Location</h3>
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                    <span className="text-green-600 font-bold text-sm">V</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Whitby (Dundas)</p>
+                    <p className="text-sm text-gray-500">Valleyview Medical Centre</p>
+                  </div>
                 </div>
               </div>
-            )}
+
+              {/* Pharmacy Info */}
+              <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-6 text-white">
+                <h2 className="text-2xl font-bold mb-2">East Whitby IDA Pharmacy</h2>
+                <p className="text-green-100 mb-4">Professional pharmacy services in the heart of Whitby</p>
+                <div className="flex items-center gap-4 text-sm">
+                  <div className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-green-300 rounded-full"></div>
+                    <span>Prescription Services</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-green-300 rounded-full"></div>
+                    <span>Health Consultations</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Services Grid */}
+              <div className="grid grid-cols-2 gap-3">
+                {linkData.map(({ href, text }, index) => (
+                  <Link key={index} href={href} className="group">
+                    <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-200 hover:shadow-md hover:border-green-300 transition-all duration-300 group-hover:scale-105">
+                      <p className="text-sm font-medium text-gray-900 text-center group-hover:text-green-600">{text}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

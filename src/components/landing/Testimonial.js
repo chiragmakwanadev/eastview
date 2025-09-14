@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Clamp from "../Clamp";
 import { Rating } from "@mui/material";
 
@@ -41,55 +41,50 @@ const Data = [
 ];
 
 const Testimonial = () => {
-  const marqueeRef = useRef(null);
+  const [current, setCurrent] = useState(0);
+  const timeoutRef = useRef(null);
 
   useEffect(() => {
-    const marquee = marqueeRef.current;
-    let animationFrame;
-    let step = 0;
-
-    const scrollMarquee = () => {
-      step += 1;
-      if (step >= marquee.scrollWidth / 2) {
-        step = 0;
-      }
-      marquee.style.transform = `translateX(-${step}px)`;
-      animationFrame = requestAnimationFrame(scrollMarquee);
+    const nextSlide = () => {
+      setCurrent((prev) => (prev + 1) % Data.length);
     };
-
-    animationFrame = requestAnimationFrame(scrollMarquee);
-    return () => cancelAnimationFrame(animationFrame);
+    timeoutRef.current = setInterval(nextSlide, 5000);
+    return () => clearInterval(timeoutRef.current);
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center py-[80px]">
-      <p className="text-[16px] xl:text-[18px] text-blue-600 bg-blue-100 w-auto xl:w-[350px] p-[5px] my-10 text-center rounded-3xl">
-        Testimonials.
-      </p>
-      <div className="relative w-full overflow-hidden">
-        <div
-          ref={marqueeRef}
-          className="flex whitespace-nowrap"
-          style={{ display: "flex", willChange: "transform" }}
-        >
-          {[...Data, ...Data].map((data, index) => (
-            <div
-              key={index}
-              className="min-w-[300px] md:min-w-[400px] p-5 mx-2 bg-gray-100 rounded-lg"
-            >
-              <div className="flex flex-col">
-                <h1 className="font-medium text-lg">{data.reviewer}</h1>
-                <h4 className="text-gray-600">{data.date}</h4>
-                <Rating value={data.rating} readOnly size="small" />
+    <section className="relative py-[100px] bg-gradient-to-r from-green-50 via-white to-green-50">
+      {/* Heading */}
+      <div className="text-center max-w-3xl mx-auto mb-12">
+        <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">Testimonials</span>
+        <h2 className="font-bold text-gray-900 leading-snug" style={{ fontSize: Clamp(1.5, 2.5) }}>
+          What Our Patients Say
+        </h2>
+      </div>
+
+      {/* Slider */}
+      <div className="relative max-w-5xl mx-auto px-6">
+        {Data.map((item, index) => (
+          <div key={index} className={`transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0 absolute"}`}>
+            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 text-center">
+              <p className="text-gray-700 text-[15px] md:text-[17px] leading-relaxed italic mb-6">“{item.review}”</p>
+              <div className="flex flex-col items-center gap-1">
+                <h4 className="font-semibold text-gray-900">{item.reviewer}</h4>
+                <span className="text-gray-500 text-sm">{item.date}</span>
+                <Rating value={item.rating} readOnly size="small" />
               </div>
-              <p className="mt-3 text-gray-800 text-[14px] md:text-[16px] text-wrap">
-                {data.review}
-              </p>
             </div>
+          </div>
+        ))}
+
+        {/* Dots */}
+        <div className="flex justify-center mt-8 gap-2">
+          {Data.map((_, index) => (
+            <button key={index} onClick={() => setCurrent(index)} className={`w-3 h-3 rounded-full transition ${index === current ? "bg-green-600" : "bg-gray-300"}`} />
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
