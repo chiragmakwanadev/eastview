@@ -42,11 +42,22 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50">
+    <div className="w-full min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50 overflow-x-hidden">
       {/* Hero Section */}
-      <div className="relative flex items-center min-h-screen">
+      <div className="relative flex items-center min-h-screen pt-20 sm:pt-24 lg:pt-20 pb-8 sm:pb-12 lg:pb-0">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/images/lan2.jpg')`,
+          }}
+        ></div>
+
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
         {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-40">
+        <div className="absolute inset-0 opacity-20">
           <div
             className="absolute inset-0"
             style={{
@@ -57,90 +68,75 @@ const Landing = () => {
 
         {/* Content */}
         <div className="relative w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center min-h-[calc(100vh-5rem)] sm:min-h-[calc(100vh-6rem)]">
             {/* Left Column */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
-                <DiCssdeck size={20} />
-                Durham Region Healthcare
+              <div className="inline-flex items-center gap-2 bg-white bg-opacity-90 text-green-800 px-3 py-2 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium backdrop-blur-sm">
+                <DiCssdeck size={16} className="sm:w-5 sm:h-5" />
+                <span className="hidden xs:inline">Durham Region Healthcare</span>
+                <span className="xs:hidden">Durham Healthcare</span>
               </div>
 
               {/* Main Heading */}
-              <div className="space-y-4">
-                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
-                  Welcome to <span className="text-green-600">Eastview</span>
-                  <br />
-                  Medical Centre
+              <div className="space-y-3 sm:space-y-4">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
+                  Welcome to <span className="text-green-400">Eastview</span>
+                  <br className="hidden sm:block" />
+                  <span className="sm:hidden"> </span>Medical Centre
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  Your health connected with care. Professional medical services
-                  in the heart of Durham Region.
+                <p className="text-base sm:text-lg md:text-xl text-gray-100 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Your health connected with care. Professional medical services in the heart of Durham Region.
                 </p>
               </div>
 
               {/* CTA */}
-              <div className="pt-4">
-                <p className="text-gray-600">
-                  Providing comprehensive healthcare services in the Durham
-                  Region
-                </p>
+              <div className="">
+                <p className="text-sm sm:text-base text-gray-200 max-w-xl mx-auto lg:mx-0">Providing comprehensive healthcare services in the Durham Region</p>
               </div>
             </div>
 
             {/* Right Column */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               {/* Location Card */}
-              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    Location
-                  </h3>
+              <div className="bg-transparent bg-opacity-95 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center justify-between mb-3 sm:mb-4">
+                  <h3 className="text-base sm:text-lg font-semibold text-white">Location</h3>
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <span className="text-green-600 font-bold text-sm">V</span>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-green-600 font-bold text-xs sm:text-sm">V</span>
                   </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">
-                      Whitby (Dundas)
-                    </p>
-                    <p className="text-sm text-gray-500">
-                      Eastview Medical Centre
-                    </p>
+                  <div className="min-w-0">
+                    <p className="font-semibold text-white text-sm sm:text-base">Whitby (Dundas)</p>
+                    <p className="text-xs sm:text-sm text-white">Eastview Medical Centre</p>
                   </div>
                 </div>
               </div>
 
               {/* Pharmacy Info */}
-              <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-6 text-white">
-                <h2 className="text-2xl font-bold mb-2">
-                  East Whitby IDA Pharmacy
-                </h2>
-                <p className="text-green-100 mb-4">
-                  Professional pharmacy services in the heart of Whitby
-                </p>
-                <div className="flex items-center gap-4 text-sm">
+              <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-4 sm:p-6 text-white">
+                <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">East Whitby IDA Pharmacy</h2>
+                <p className="text-green-100 mb-3 sm:mb-4 text-sm sm:text-base">Professional pharmacy services in the heart of Whitby</p>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs sm:text-sm">
                   <div className="flex items-center gap-2">
-                    <div className="w-1 h-1 bg-green-300 rounded-full"></div>
+                    <div className="w-1 h-1 bg-green-300 rounded-full flex-shrink-0"></div>
                     <span>Prescription Services</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-1 h-1 bg-green-300 rounded-full"></div>
+                    <div className="w-1 h-1 bg-green-300 rounded-full flex-shrink-0"></div>
                     <span>Health Consultations</span>
                   </div>
                 </div>
               </div>
 
               {/* Services Grid */}
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {linkData.map(({ href, text }, index) => (
                   <Link key={index} href={href} className="group">
-                    <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-200 hover:shadow-md hover:border-green-300 transition-all duration-300 group-hover:scale-105">
-                      <p className="text-sm font-medium text-gray-900 text-center group-hover:text-green-600">
-                        {text}
-                      </p>
+                    <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 sm:p-5 shadow-lg border border-white border-opacity-20 hover:shadow-xl hover:border-green-300 hover:bg-opacity-20 transition-all duration-300 group-hover:scale-105">
+                      <p className="text-sm sm:text-base font-medium text-white text-center group-hover:text-green-300 leading-tight">{text}</p>
                     </div>
                   </Link>
                 ))}
