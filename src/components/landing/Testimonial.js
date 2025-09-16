@@ -8,14 +8,14 @@ const Data = [
     rating: 5,
     date: "3 months ago",
     review:
-      "If you are looking for a doctor we highly recommend Valleyview Medical Centre. My wife and I registered in person and we're assigned a doctor immediately. We met with Dr. Francis Aluh. He is amazing. He took his time with us, has excellent communication skills, and is very easy to speak with. The Clinic reception staff are well organized, pleasant and efficient in calling patient to see their doctor.",
+      "If you are looking for a doctor we highly recommend Eastview Medical Centre. My wife and I registered in person and we're assigned a doctor immediately. We met with Dr. Francis Aluh. He is amazing. He took his time with us, has excellent communication skills, and is very easy to speak with. The Clinic reception staff are well organized, pleasant and efficient in calling patient to see their doctor.",
   },
   {
     reviewer: "Saad Faize",
     rating: 5,
     date: "2 months ago",
     review:
-      "Exceptional care at Valleyview Medical Centre! Dr. Emmanuel Erdogan is incredibly supportive, going above and beyond for patient well-being. The help desk and pharmacy staff are professional, efficient, and caring. The quality of care far exceeded my expectations. Highly recommend this clinic and its services!",
+      "Exceptional care at Eastview Medical Centre! Dr. Emmanuel Erdogan is incredibly supportive, going above and beyond for patient well-being. The help desk and pharmacy staff are professional, efficient, and caring. The quality of care far exceeded my expectations. Highly recommend this clinic and its services!",
   },
   {
     reviewer: "telugammayi Dhanasree",
@@ -36,7 +36,7 @@ const Data = [
     rating: 5,
     date: "a month ago",
     review:
-      "Been going here ever since I was 6 and the current staff and environment are the best yet. Reception has improved, pharmacy is great (still have the same pharmacist since my first time there) and doctors are on top of it. The best part though is that any concerns you have regarding staff, appointments, rescheduling etc. are all taken seriously and changes are made. Good work Valleyview!",
+      "Been going here ever since I was 6 and the current staff and environment are the best yet. Reception has improved, pharmacy is great (still have the same pharmacist since my first time there) and doctors are on top of it. The best part though is that any concerns you have regarding staff, appointments, rescheduling etc. are all taken seriously and changes are made. Good work Eastview!",
   },
 ];
 
@@ -56,8 +56,13 @@ const Testimonial = () => {
     <section className="relative py-[100px] bg-gradient-to-r from-green-50 via-white to-green-50">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">Testimonials</span>
-        <h2 className="font-bold text-gray-900 leading-snug" style={{ fontSize: Clamp(1.5, 2.5) }}>
+        <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+          Testimonials
+        </span>
+        <h2
+          className="font-bold text-gray-900 leading-snug"
+          style={{ fontSize: Clamp(1.5, 2.5) }}
+        >
           What Our Patients Say
         </h2>
       </div>
@@ -65,9 +70,14 @@ const Testimonial = () => {
       {/* Slider */}
       <div className="relative max-w-5xl mx-auto px-6">
         {Data.map((item, index) => (
-          <div key={index} className={`transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0 absolute"}`}>
+          <div
+            key={index}
+            className={`transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0 absolute"}`}
+          >
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 text-center">
-              <p className="text-gray-700 text-[15px] md:text-[17px] leading-relaxed italic mb-6">“{item.review}”</p>
+              <p className="text-gray-700 text-[15px] md:text-[17px] leading-relaxed italic mb-6">
+                “{item.review}”
+              </p>
               <div className="flex flex-col items-center gap-1">
                 <h4 className="font-semibold text-gray-900">{item.reviewer}</h4>
                 <span className="text-gray-500 text-sm">{item.date}</span>
@@ -80,7 +90,11 @@ const Testimonial = () => {
         {/* Dots */}
         <div className="flex justify-center mt-8 gap-2">
           {Data.map((_, index) => (
-            <button key={index} onClick={() => setCurrent(index)} className={`w-3 h-3 rounded-full transition ${index === current ? "bg-green-600" : "bg-gray-300"}`} />
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full transition ${index === current ? "bg-green-600" : "bg-gray-300"}`}
+            />
           ))}
         </div>
       </div>

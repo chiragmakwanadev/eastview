@@ -9,7 +9,10 @@ const Index = () => {
   const itemsPerPage = 3;
   const totalPages = Math.ceil(Newsdata.length / itemsPerPage);
 
-  const currentItems = Newsdata.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const currentItems = Newsdata.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
   const truncateText = (text) => {
     const words = text.split(" ");
@@ -27,35 +30,57 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>What&apos;s new at Valleyview Medical Centre | Valleyview Medical Centre</title>
+        <title>
+          What&apos;s new at Eastview Medical Centre | Eastview Medical Centre
+        </title>
       </Head>
       <div>
         <section className="relative bg-gradient-to-b from-green-50 to-white py-[100px] padding-x">
           {/* Header */}
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">Latest News & Updates</span>
-            <h1 className="font-bold text-gray-900 leading-snug" style={{ fontSize: Clamp(2, 3) }}>
+            <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+              Latest News & Updates
+            </span>
+            <h1
+              className="font-bold text-gray-900 leading-snug"
+              style={{ fontSize: Clamp(2, 3) }}
+            >
               Stay <span className="text-green-600">Informed</span>
             </h1>
-            <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">Get the latest news, updates, and health information from Valleyview Medical Centre</p>
+            <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">
+              Get the latest news, updates, and health information from Eastview
+              Medical Centre
+            </p>
           </div>
 
           {/* News Grid */}
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
               {currentItems.map((news) => (
-                <div key={news.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group">
+                <div
+                  key={news.id}
+                  className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
+                >
                   <div className="p-8">
                     <div className="flex items-center justify-between mb-4">
-                      <p className="text-gray-500 text-sm font-medium">{news.date}</p>
-                      <span className="text-xs text-green-600 bg-green-100 px-3 py-1 rounded-full font-medium">{news.tag}</span>
+                      <p className="text-gray-500 text-sm font-medium">
+                        {news.date}
+                      </p>
+                      <span className="text-xs text-green-600 bg-green-100 px-3 py-1 rounded-full font-medium">
+                        {news.tag}
+                      </span>
                     </div>
 
-                    <h2 className="font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300" style={{ fontSize: Clamp(1.1, 1.4) }}>
+                    <h2
+                      className="font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300"
+                      style={{ fontSize: Clamp(1.1, 1.4) }}
+                    >
                       {news.title}
                     </h2>
 
-                    <p className="text-gray-600 text-[15px] leading-relaxed mb-6">{truncateText(news.description)}</p>
+                    <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
+                      {truncateText(news.description)}
+                    </p>
 
                     <Link href={`/news/${news.id}`} className="inline-block">
                       <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:shadow-md w-full">
@@ -83,7 +108,10 @@ const Index = () => {
               </button>
 
               <div className="flex items-center gap-2">
-                <span className="text-gray-600 font-medium" style={{ fontSize: Clamp(0.9, 1.1) }}>
+                <span
+                  className="text-gray-600 font-medium"
+                  style={{ fontSize: Clamp(0.9, 1.1) }}
+                >
                   Page {currentPage} of {totalPages}
                 </span>
               </div>

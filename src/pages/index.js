@@ -28,7 +28,7 @@ export const poppins = Poppins({
 });
 
 export default function Home() {
-  const location = localStorage.getItem("location");
+  const location = "Whitby";
 
   return (
     <div className={` ${poppins.variable}`}>

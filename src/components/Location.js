@@ -5,7 +5,7 @@ const LocationBox = ({ onSelectLocation }) => {
   const router = useRouter();
 
   const handleLocationSelect = (location) => {
-    localStorage.setItem("location", location);
+    // localStorage.setItem("location", location);
 
     onSelectLocation(location);
     router.push({

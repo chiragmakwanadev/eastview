@@ -3,7 +3,7 @@ export const AssistantData = [
     name: "Musab Waseem",
     position: "Office Administrator | Certified Hybrid Healthcare Professional",
     image: "/images/musab.jpg",
-    description: `Musab Waseem serves as the Office Administrator at Valleyview Medical Centre, where his expertise ensures the smooth functioning of one of the busiest clinics in the region, serving over 300 patients daily.
+    description: `Musab Waseem serves as the Office Administrator at Eastview Medical Centre, where his expertise ensures the smooth functioning of one of the busiest clinics in the region, serving over 300 patients daily.
       
                 With over 1.5 years of dedicated service, Musab has proven to be an invaluable asset to the team, seamlessly managing both administrative and technical operations.
       
@@ -15,7 +15,7 @@ export const AssistantData = [
       
                 He also holds certifications in IM injection, vaccine handling, First Aid CPR, mental health, and Microsoft Office (Excel, Word, PowerPoint), reflecting his commitment to continuous learning and professional development.
       
-                Musab’s dedication, attention to detail, and compassionate approach make him a pivotal member of the Valleyview Medical Centre team, contributing significantly to the clinic’s reputation for excellent patient care and efficient service delivery.`,
+                Musab’s dedication, attention to detail, and compassionate approach make him a pivotal member of the Eastview Medical Centre team, contributing significantly to the clinic’s reputation for excellent patient care and efficient service delivery.`,
   },
   {
     name: "Kanwal Aggarwal",

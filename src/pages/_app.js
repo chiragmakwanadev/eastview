@@ -26,7 +26,9 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     if (hasReloaded) {
-      localStorage.removeItem("location");
+      // localStorage.removeItem("location");
+      // const storedLocation = localStorage.getItem("location");
+      // localStorage.setItem("location", selectedLocation);
       setLocation(null);
     } else {
       const storedLocation = localStorage.getItem("location");
@@ -36,15 +38,15 @@ function MyApp({ Component, pageProps }) {
     }
   }, [hasReloaded]);
 
-  const handleSelectLocation = (selectedLocation) => {
-    setLocation(selectedLocation);
-    localStorage.setItem("location", selectedLocation);
-    router.push("/", undefined, { shallow: true });
-  };
+  // const handleSelectLocation = (selectedLocation) => {
+  //   setLocation(selectedLocation);
+  //   // localStorage.setItem("location", selectedLocation);
+  //   router.push("/", undefined, { shallow: true });
+  // };
 
-  if (!location) {
-    return <LocationBox onSelectLocation={handleSelectLocation} />;
-  }
+  // if (!location) {
+  //   return <LocationBox onSelectLocation={"Whitby"} />;
+  // }
 
   return (
     <div className="relative">

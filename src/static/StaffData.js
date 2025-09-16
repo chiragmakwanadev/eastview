@@ -8,7 +8,7 @@ export const Data = [
         slug: "dr-emmanuel-olamide-adeogun",
         description: `Dr. Emmanuel is a highly skilled and versatile medical professional whose extensive background in healthcare demonstrates remarkable leadership capabilities.
     
-              Prior to joining Valleyview, he gained valuable experience as a General Practitioner Registrar, focusing on primary care services, and also worked as an Emergency Medicine Bank Registrar, adeptly managing urgent cases in the emergency department.
+              Prior to joining Eastview, he gained valuable experience as a General Practitioner Registrar, focusing on primary care services, and also worked as an Emergency Medicine Bank Registrar, adeptly managing urgent cases in the emergency department.
     
               Driven by a commitment to excel, he undertook roles as a Junior Clinical Fellow in various departments, including Endocrinology and Diabetes, acute medicine, and elderly patient care, expanding his clinical expertise.
     
@@ -37,7 +37,7 @@ export const Data = [
     
               Looking ahead, Dr. Saif remains committed to broadening her scope of practice and enhancing her proficiency in Family Medicine.
     
-              Her goal is to offer comprehensive and holistic care to her patients at Valleyview Medical Centre, ensuring that every individual receives the highest quality of care tailored to their unique needs.
+              Her goal is to offer comprehensive and holistic care to her patients at Eastview Medical Centre, ensuring that every individual receives the highest quality of care tailored to their unique needs.
     
               In addition to her professional accomplishments, Dr. Saif is fluent in both English and Urdu, enabling her to communicate effectively with a diverse patient population and establish strong doctor-patient relationships based on trust and understanding.`,
       },
@@ -58,20 +58,20 @@ export const Data = [
           
           Her proficiency in Pediatrics underscores her ability to care for our youngest patients, ensuring their health and well-being from an early age.
           
-          What truly sets Dr. Agoro apart is her commitment to ongoing professional development. This dedication ensures that she remains at the forefront of medical advancements, offering Valleyview Medical Centre’s patients the latest and most effective treatments.
+          What truly sets Dr. Agoro apart is her commitment to ongoing professional development. This dedication ensures that she remains at the forefront of medical advancements, offering Eastview Medical Centre’s patients the latest and most effective treatments.
           
-          We are confident that Dr. Rashida Anike Agoro’s presence will not only enrich the medical expertise at Valleyview but also contribute to the compassionate and holistic healthcare experience we strive to provide. Join us in extending a warm welcome to Dr. Agoro, a healthcare professional committed to the well-being of our community.`, // Add Dr. Rashida's description here
+          We are confident that Dr. Rashida Anike Agoro’s presence will not only enrich the medical expertise at Eastview but also contribute to the compassionate and holistic healthcare experience we strive to provide. Join us in extending a warm welcome to Dr. Agoro, a healthcare professional committed to the well-being of our community.`, // Add Dr. Rashida's description here
       },
       {
         title: "Family Physician",
         name: "Dr. Abdullah Khan",
         image: "/images/abdullah.jpg",
         slug: "dr-abdullah-khan",
-        description: `Valleyview Medical Centre is proud to introduce Dr. Abdullah Khan, an esteemed medical professional with over 12 years of experience since his graduation.
+        description: `Eastview Medical Centre is proud to introduce Dr. Abdullah Khan, an esteemed medical professional with over 12 years of experience since his graduation.
   
           Dr. Khan’s journey in the field of medicine has taken him across borders, as he has practiced in both England and Scotland, honing his skills and gaining invaluable experience.
           
-          With a solid foundation in neurosurgery, Dr. Khan brings a unique and specialized perspective to the medical team at Valleyview Medical Centre.
+          With a solid foundation in neurosurgery, Dr. Khan brings a unique and specialized perspective to the medical team at Eastview Medical Centre.
           
           His background in neurosurgery reflects not only his commitment to excellence but also his ability to handle complex medical cases with precision and expertise.
           
@@ -81,7 +81,7 @@ export const Data = [
           
           We take immense pride in having Dr. Abdullah Khan as part of our medical staff. His wealth of experience, international exposure, and commitment to patient well-being make him a respected figure in the medical community.
           
-          When you choose Valleyview Medical Centre, you’re not only selecting a healthcare provider but also gaining access to the expertise and care of Dr. Abdullah Khan – a seasoned professional with a passion for delivering top-notch medical services.
+          When you choose Eastview Medical Centre, you’re not only selecting a healthcare provider but also gaining access to the expertise and care of Dr. Abdullah Khan – a seasoned professional with a passion for delivering top-notch medical services.
           
           `,
       },
@@ -103,7 +103,7 @@ export const Data = [
           
           Outside of his professional life, Dr. Afolarin remains dedicated to improving patient care and is always striving to stay at the forefront of medical advancements to provide the best outcomes for those he serves.
           
-          Dr. Afolarin is currently accepting new patients and is available for consultations at Valleyview Medical Centre's Harmony location.          
+          Dr. Afolarin is currently accepting new patients and is available for consultations at Eastview Medical Centre's Harmony location.          
           `,
       },
       {
@@ -213,7 +213,7 @@ export const Data = [
         name: "Musab Waseem",
         image: "/images/musab.jpg",
         slug: "musab-waseem-manager",
-        description: `As the Manager of Clinical and Business Operations at Valleyview Medical Centre, Musab Waseem ensures the smooth and efficient functioning of both patient care services and business operations. With over 14 months of experience in healthcare administration, he plays a pivotal role in managing daily clinic workflows, optimizing operational strategies, and implementing advanced healthcare technologies. His expertise in EMR systems, medical billing, and regulatory compliance contributes to a well-structured and patient-focused environment. Musab’s leadership and problem-solving skills allow him to coordinate seamlessly with physicians, staff, and patients, ensuring that the clinic delivers exceptional care while maintaining the highest standards of efficiency and professionalism.
+        description: `As the Manager of Clinical and Business Operations at Eastview Medical Centre, Musab Waseem ensures the smooth and efficient functioning of both patient care services and business operations. With over 14 months of experience in healthcare administration, he plays a pivotal role in managing daily clinic workflows, optimizing operational strategies, and implementing advanced healthcare technologies. His expertise in EMR systems, medical billing, and regulatory compliance contributes to a well-structured and patient-focused environment. Musab’s leadership and problem-solving skills allow him to coordinate seamlessly with physicians, staff, and patients, ensuring that the clinic delivers exceptional care while maintaining the highest standards of efficiency and professionalism.
         `,
       },
       {
@@ -222,7 +222,7 @@ export const Data = [
         image: "/images/musab.jpg",
         oshawa: "true",
         slug: "musab-waseem-manager",
-        description: `As the Manager of Clinical and Business Operations at Valleyview Medical Centre, Musab Waseem ensures the smooth and efficient functioning of both patient care services and business operations. With over 14 months of experience in healthcare administration, he plays a pivotal role in managing daily clinic workflows, optimizing operational strategies, and implementing advanced healthcare technologies. His expertise in EMR systems, medical billing, and regulatory compliance contributes to a well-structured and patient-focused environment. Musab’s leadership and problem-solving skills allow him to coordinate seamlessly with physicians, staff, and patients, ensuring that the clinic delivers exceptional care while maintaining the highest standards of efficiency and professionalism.
+        description: `As the Manager of Clinical and Business Operations at Eastview Medical Centre, Musab Waseem ensures the smooth and efficient functioning of both patient care services and business operations. With over 14 months of experience in healthcare administration, he plays a pivotal role in managing daily clinic workflows, optimizing operational strategies, and implementing advanced healthcare technologies. His expertise in EMR systems, medical billing, and regulatory compliance contributes to a well-structured and patient-focused environment. Musab’s leadership and problem-solving skills allow him to coordinate seamlessly with physicians, staff, and patients, ensuring that the clinic delivers exceptional care while maintaining the highest standards of efficiency and professionalism.
         `,
       },
       {
@@ -250,7 +250,7 @@ export const Data = [
         name: "Musab Waseem",
         image: "/images/musab.jpg",
         slug: "musab-waseem-admin",
-        description: `Musab Waseem is a highly skilled allied healthcare professional with a strong background in pharmacy and clinical support. Having previously worked as a pharmacist in India, he brings extensive knowledge of medications, patient counseling, and healthcare procedures. His expertise extends to immunization, as he holds certifications in IM injection and vaccine handling, ensuring safe and effective administration of vaccines. With a keen eye for precision and a commitment to patient care, Musab plays a crucial role in supporting both clinical and administrative functions at Valleyview Medical Centre. His diverse skill set and dedication make him an integral part of the healthcare team.
+        description: `Musab Waseem is a highly skilled allied healthcare professional with a strong background in pharmacy and clinical support. Having previously worked as a pharmacist in India, he brings extensive knowledge of medications, patient counseling, and healthcare procedures. His expertise extends to immunization, as he holds certifications in IM injection and vaccine handling, ensuring safe and effective administration of vaccines. With a keen eye for precision and a commitment to patient care, Musab plays a crucial role in supporting both clinical and administrative functions at Eastview Medical Centre. His diverse skill set and dedication make him an integral part of the healthcare team.
         `,
       },
       {
@@ -259,7 +259,7 @@ export const Data = [
         name: "Musab Waseem",
         image: "/images/musab.jpg",
         slug: "musab-waseem-admin",
-        description: `Musab Waseem is a highly skilled allied healthcare professional with a strong background in pharmacy and clinical support. Having previously worked as a pharmacist in India, he brings extensive knowledge of medications, patient counseling, and healthcare procedures. His expertise extends to immunization, as he holds certifications in IM injection and vaccine handling, ensuring safe and effective administration of vaccines. With a keen eye for precision and a commitment to patient care, Musab plays a crucial role in supporting both clinical and administrative functions at Valleyview Medical Centre. His diverse skill set and dedication make him an integral part of the healthcare team.
+        description: `Musab Waseem is a highly skilled allied healthcare professional with a strong background in pharmacy and clinical support. Having previously worked as a pharmacist in India, he brings extensive knowledge of medications, patient counseling, and healthcare procedures. His expertise extends to immunization, as he holds certifications in IM injection and vaccine handling, ensuring safe and effective administration of vaccines. With a keen eye for precision and a commitment to patient care, Musab plays a crucial role in supporting both clinical and administrative functions at Eastview Medical Centre. His diverse skill set and dedication make him an integral part of the healthcare team.
         `,
       },
       {

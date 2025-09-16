@@ -21,7 +21,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { id } = params;
-  const policyTopic = Object.values(PolicyData).flatMap((data) => data.filter((item) => item.slug === id))[0];
+  const policyTopic = Object.values(PolicyData).flatMap((data) =>
+    data.filter((item) => item.slug === id)
+  )[0];
 
   if (!policyTopic) {
     return {
@@ -37,22 +39,31 @@ export async function getStaticProps({ params }) {
 }
 
 const PolicySlugPage = ({ policyTopic }) => {
-  const showImages = ["clinic-policies", "health-card-policy"].includes(policyTopic.slug);
+  const showImages = ["clinic-policies", "health-card-policy"].includes(
+    policyTopic.slug
+  );
 
   return (
     <>
       <Head>
-        <title>{policyTopic.topic} | Valleyview Medical Centre</title>
+        <title>{policyTopic.topic} | Eastview Medical Centre</title>
       </Head>
       <div className="policy-page">
         <section className="relative bg-gray-50 py-[100px] padding-x">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">Policies & Guidelines</span>
-            <h1 className="font-bold text-gray-900" style={{ fontSize: Clamp(2, 3) }}>
+            <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+              Policies & Guidelines
+            </span>
+            <h1
+              className="font-bold text-gray-900"
+              style={{ fontSize: Clamp(2, 3) }}
+            >
               {policyTopic.topic}
             </h1>
-            <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">Important information for patients and visitors</p>
+            <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">
+              Important information for patients and visitors
+            </p>
           </div>
 
           {/* Timeline Style */}
@@ -70,7 +81,10 @@ const PolicySlugPage = ({ policyTopic }) => {
 
                   {/* Content */}
                   <div className="bg-white rounded-xl shadow-md p-6 flex-1 hover:shadow-lg transition-all">
-                    <h2 className="font-bold text-gray-900" style={{ fontSize: Clamp(1.2, 1.6) }}>
+                    <h2
+                      className="font-bold text-gray-900"
+                      style={{ fontSize: Clamp(1.2, 1.6) }}
+                    >
                       {policy.title}
                     </h2>
                     <p
@@ -85,7 +99,13 @@ const PolicySlugPage = ({ policyTopic }) => {
 
                     {showImages && policy.image && (
                       <div className="mt-4 rounded-lg overflow-hidden shadow">
-                        <Image src={policy.image} alt="Policy" width={600} height={350} className="object-cover" />
+                        <Image
+                          src={policy.image}
+                          alt="Policy"
+                          width={600}
+                          height={350}
+                          className="object-cover"
+                        />
                       </div>
                     )}
                   </div>

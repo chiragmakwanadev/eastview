@@ -131,7 +131,7 @@ const HamburgerMenu = ({ data }) => {
             </Link>
           </li>
           <li>
-            <Link href="https://www.instagram.com/valleyviewmedical/">
+            <Link href="https://www.instagram.com/Eastviewmedical/">
               <FaInstagram />
             </Link>
           </li>

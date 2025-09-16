@@ -32,7 +32,7 @@ const Index = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailto = `mailto:info@valleyviewmedical.ca?subject=New Inquiry from ${formData.firstName} ${formData.lastName}&body=${encodeURIComponent(
+    const mailto = `mailto:info@Eastviewmedical.ca?subject=New Inquiry from ${formData.firstName} ${formData.lastName}&body=${encodeURIComponent(
       `Name: ${formData.firstName} ${formData.lastName}
 Phone: ${formData.phone}
 Email: ${formData.email}
@@ -42,7 +42,7 @@ Message: ${formData.message}`
     window.location.href = mailto;
   };
 
-  const locationAccess = typeof window !== "undefined" ? localStorage.getItem("location") : "Whitby";
+  const location = "Whitby";
 
   return (
     <>
@@ -53,33 +53,52 @@ Message: ${formData.message}`
         <section className="relative bg-gradient-to-b from-green-50 to-white py-[100px] padding-x">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">We&apos;re Here to Help</span>
-            <h1 className="font-bold text-gray-900 leading-snug" style={{ fontSize: Clamp(2, 3) }}>
+            <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+              We&apos;re Here to Help
+            </span>
+            <h1
+              className="font-bold text-gray-900 leading-snug"
+              style={{ fontSize: Clamp(2, 3) }}
+            >
               Get in <span className="text-green-600">Touch</span>
             </h1>
-            <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">Questions, appointments, or feedback — our team is ready to assist you.</p>
+            <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">
+              Questions, appointments, or feedback — our team is ready to assist
+              you.
+            </p>
           </div>
 
           {/* Content */}
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {/* Map & Info Card */}
             <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-              <p className="text-[14px] md:text-[16px] text-gray-600">Accessible Parking Available</p>
-              <h2 className="font-semibold text-green-600 mt-2" style={{ fontSize: Clamp(1.2, 1.8) }}>
+              <p className="text-[14px] md:text-[16px] text-gray-600">
+                Accessible Parking Available
+              </p>
+              <h2
+                className="font-semibold text-green-600 mt-2"
+                style={{ fontSize: Clamp(1.2, 1.8) }}
+              >
                 Location
               </h2>
-              {locationAccess === "Whitby" ? (
-                <p className="text-gray-700 pb-4" style={{ fontSize: Clamp(1, 1.4) }}>
+              {location === "Whitby" ? (
+                <p
+                  className="text-gray-700 pb-4"
+                  style={{ fontSize: Clamp(1, 1.4) }}
+                >
                   1916 Dundas St E Unit 6, Whitby
                 </p>
               ) : (
-                <p className="text-gray-700 pb-4" style={{ fontSize: Clamp(1, 1.4) }}>
+                <p
+                  className="text-gray-700 pb-4"
+                  style={{ fontSize: Clamp(1, 1.4) }}
+                >
                   991 Taunton Rd E B3, Oshawa, ON L1K 0Z7, Canada
                 </p>
               )}
 
               <div className="rounded-xl overflow-hidden mb-6">
-                {locationAccess === "Whitby" ? (
+                {location === "Whitby" ? (
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.1347128752056!2d-78.901594!3d43.889603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d525cd06d2595d%3A0x9f6c4a3af69bb80d!2s1916%20Dundas%20St%20E%2C%20Whitby%2C%20ON%20L1N%202L6%2C%20Canada!5e0!3m2!1sen!2sca!4v1699633078210!5m2!1sen!2sca"
                     allowFullScreen=""
@@ -102,18 +121,30 @@ Message: ${formData.message}`
 
               <div className="flex flex-wrap items-center gap-4">
                 <Link href="tel:+19054341662" className="inline-block">
-                  <span className="px-4 py-2 rounded-xl bg-green-50 text-green-700 border border-green-100">Call: +1 905-434-1662</span>
+                  <span className="px-4 py-2 rounded-xl bg-green-50 text-green-700 border border-green-100">
+                    Call: +1 905-434-1662
+                  </span>
                 </Link>
-                <Link href="mailto:info@valleyviewmedical.ca" className="inline-block">
-                  <span className="px-4 py-2 rounded-xl bg-green-50 text-green-700 border border-green-100">Email: info@valleyviewmedical.ca</span>
+                <Link
+                  href="mailto:info@Eastviewmedical.ca"
+                  className="inline-block"
+                >
+                  <span className="px-4 py-2 rounded-xl bg-green-50 text-green-700 border border-green-100">
+                    Email: info@Eastviewmedical.ca
+                  </span>
                 </Link>
               </div>
             </div>
 
             {/* Form Card */}
             <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-              <h2 className="text-[22px] md:text-[24px] font-semibold mb-4 text-green-600">New Patient Registration Form</h2>
-              <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <h2 className="text-[22px] md:text-[24px] font-semibold mb-4 text-green-600">
+                New Patient Registration Form
+              </h2>
+              <form
+                onSubmit={handleSubmit}
+                className="grid grid-cols-1 md:grid-cols-2 gap-4"
+              >
                 <input
                   type="text"
                   name="firstName"
@@ -169,7 +200,10 @@ Message: ${formData.message}`
                   required
                   className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-200 h-32 md:col-span-2"
                 ></textarea>
-                <button type="submit" className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 md:col-span-2">
+                <button
+                  type="submit"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 md:col-span-2"
+                >
                   Submit
                 </button>
               </form>
@@ -179,17 +213,30 @@ Message: ${formData.message}`
           {/* Hours & Note */}
           <div className="max-w-7xl mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8 mt-8">
             <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-              <p className="text-[14px] md:text-[16px] text-gray-600">Valleyview Medical Centre</p>
-              <h3 className="font-semibold text-green-600 mt-1 mb-4" style={{ fontSize: Clamp(1.2, 1.8) }}>
+              <p className="text-[14px] md:text-[16px] text-gray-600">
+                Eastview Medical Centre
+              </p>
+              <h3
+                className="font-semibold text-green-600 mt-1 mb-4"
+                style={{ fontSize: Clamp(1.2, 1.8) }}
+              >
                 Visit a Doctor
               </h3>
-              <p className="text-green-600 mb-6" style={{ fontSize: Clamp(1, 1.4) }}>
+              <p
+                className="text-green-600 mb-6"
+                style={{ fontSize: Clamp(1, 1.4) }}
+              >
                 +1 905-434-1662
               </p>
               <div className="text-[16px]">
                 {Object.entries(Dates[0]).map(([day, time]) => (
-                  <div key={day} className="grid grid-cols-2 gap-x-2 pb-2 items-center">
-                    <p className="font-semibold text-gray-800 whitespace-nowrap">{day}:</p>
+                  <div
+                    key={day}
+                    className="grid grid-cols-2 gap-x-2 pb-2 items-center"
+                  >
+                    <p className="font-semibold text-gray-800 whitespace-nowrap">
+                      {day}:
+                    </p>
                     <p className="text-gray-700">{time}</p>
                   </div>
                 ))}
@@ -198,7 +245,9 @@ Message: ${formData.message}`
             <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex items-center">
               <span className="flex flex-col md:flex-row gap-2 md:items-end">
                 <h4 className="font-bold text-[18px] text-gray-900">NOTE:</h4>
-                <span className="text-gray-700">Times may vary depending on doctor’s availability</span>
+                <span className="text-gray-700">
+                  Times may vary depending on doctor’s availability
+                </span>
               </span>
             </div>
           </div>
