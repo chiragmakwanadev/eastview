@@ -23,7 +23,7 @@ const Index = () => {
         >
           <div className="relative">
             <Image
-              src={item.image || "/images/logo.png"}
+              src={item.image || "/images/east-logo.png"}
               alt={item.name}
               width={300}
               height={280}

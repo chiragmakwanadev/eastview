@@ -28,15 +28,13 @@ export const poppins = Poppins({
 });
 
 export default function Home() {
-  const location = "Whitby";
-
   return (
     <div className={` ${poppins.variable}`}>
       <Head>
-        <title>Vallewview Medical Centre {location}</title>
+        <title>Eastview Medical Centre </title>
       </Head>
       <main>
-        <Landing location={location} />
+        <Landing />
         <Registration />
         {/* <Priscription /> */}
         <News />

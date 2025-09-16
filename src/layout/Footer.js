@@ -18,18 +18,11 @@ const Footer = () => {
             style={{ fontSize: Clamp(0.8, 1.1) }}
           >
             <h3 className="font-semibold mb-2">ADDRESS</h3>
-            {location === "Whitby" ? (
-              <p>
-                1916 Dundas St E Unit 6<br />
-                Whitby, ON L1N 2L6
-              </p>
-            ) : (
-              <p>
-                991 Taunton Rd E B3
-                <br />
-                Oshawa, ON L1K 0Z7, Canada
-              </p>
-            )}
+            <p>
+              Unit 4 1200 rossland Rd E whitby
+              <br />
+              L1N 8H3
+            </p>
           </div>
         </div>
 
@@ -67,15 +60,10 @@ const Footer = () => {
           >
             <li>
               <span className="font-semibold">CALL US: </span>
-              {location === "Whitby" ? (
-                <Link href="tel:+19054341662" className="hover:text-blue-400">
-                  +1 905-434-1662
-                </Link>
-              ) : (
-                <Link href="tel:+19053678510" className="hover:text-blue-400">
-                  +1 905-367-8510
-                </Link>
-              )}
+
+              <Link href="tel:+19054341662" className="hover:text-blue-400">
+                +1-905-556-3240
+              </Link>
             </li>
             <li>
               <span className="font-semibold">FAX US: </span>
@@ -85,17 +73,17 @@ const Footer = () => {
               <span className="font-semibold">EMAIL: </span>
               {location === "Whitby" ? (
                 <Link
-                  href="mailto:info@Eastviewmedical.ca"
+                  href="mailto:info@eastviewmedical.ca"
                   className="hover:text-blue-400"
                 >
-                  info@Eastviewmedical.ca
+                  info@eastviewmedical.ca
                 </Link>
               ) : (
                 <Link
-                  href="mailto:Eastviewharmony@gmail.com"
+                  href="mailto:eastviewharmony@gmail.com"
                   className="hover:text-blue-400"
                 >
-                  Eastviewharmony@gmail.com
+                  eastviewharmony@gmail.com
                 </Link>
               )}
             </li>

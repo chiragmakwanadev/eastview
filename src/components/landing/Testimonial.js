@@ -22,7 +22,7 @@ const Data = [
     rating: 5,
     date: "3 weeks ago",
     review:
-      "Valley View hospital exceeded our expectations! Dr. Emmanuel Adeogun provided thorough care during my pregnancy, closely monitoring my health and ensuring the best outcomes. The staff is kind, patient, and accommodating despite the hospital being busy. We’re beyond grateful for their support!",
+      "East View hospital exceeded our expectations! Dr. Emmanuel Adeogun provided thorough care during my pregnancy, closely monitoring my health and ensuring the best outcomes. The staff is kind, patient, and accommodating despite the hospital being busy. We’re beyond grateful for their support!",
   },
   {
     reviewer: "Bhakti Patel",

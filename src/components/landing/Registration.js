@@ -40,11 +40,7 @@ const Registration = () => {
         {/* Left Section - Map & Location */}
         <div className="space-y-6">
           <iframe
-            src={
-              isWhitby
-                ? "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.1347128752056!2d-78.901594!3d43.889603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d525cd06d2595d%3A0x9f6c4a3af69bb80d!2s1916%20Dundas%20St%20E%2C%20Whitby%2C%20ON%20L1N%202L6%2C%20Canada!5e0!3m2!1sen!2sca!4v1699633078210!5m2!1sen!2sca"
-                : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.078275663616!2d-78.84900402362726!3d43.94217347107847"
-            }
+            src="https://www.google.com/maps?q=Unit%204%2C%201200%20Rossland%20Rd%20E%2C%20Whitby%2C%20ON%20L1N%208H3&z=16&output=embed"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

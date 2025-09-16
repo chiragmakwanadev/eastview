@@ -23,7 +23,7 @@ export const Data = [
       {
         title: "Family Physician",
         name: "Dr. Sidra Saif",
-        image: "/images/logo.png",
+        image: "/images/east-logo.png",
         slug: "dr-sidra-saif",
         description: `Dr. Sidra Saif is an experienced and compassionate medical professional who is committed to providing exceptional care to her patients.
     
@@ -44,7 +44,7 @@ export const Data = [
       {
         title: "Family Physician",
         name: "Dr. Rashida Anike Agoro",
-        image: "/images/logo.png",
+        image: "/images/east-logo.png",
         slug: "dr-rashida-anike-agoro",
         description: `Dr. Rashida Anike Agoro brings a specialized focus on Geriatric Medicine, Women’s Health, Psychiatry, Pediatrics, and General Practice, Dr. Agoro brings a wealth of knowledge and a commitment to comprehensive patient care.
   

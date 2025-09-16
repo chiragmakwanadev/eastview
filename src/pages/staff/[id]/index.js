@@ -10,7 +10,7 @@ const StaffDetail = ({ staffMember }) => {
   return (
     <>
       <Head>
-        <title>{staffMember.name} | Vallewview Medical Centre</title>
+        <title>{staffMember.name} | Eastview Medical Centre</title>
       </Head>
       <div className="flex flex-col w-full items-center">
         <Banner subtitle={staffMember.name} buttonText="Email Us" />

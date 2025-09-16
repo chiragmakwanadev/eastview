@@ -147,7 +147,7 @@ const ClinicDetail = () => {
             Your health connected with care!
           </p>
           <Link
-            href="mailto:info@Eastviewmedical.ca"
+            href="mailto:info@eastviewmedical.ca"
             className="w-[100px] xl:w-[150px]"
           >
             <button

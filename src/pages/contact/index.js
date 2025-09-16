@@ -32,7 +32,7 @@ const Index = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailto = `mailto:info@Eastviewmedical.ca?subject=New Inquiry from ${formData.firstName} ${formData.lastName}&body=${encodeURIComponent(
+    const mailto = `mailto:info@eastviewmedical.ca?subject=New Inquiry from ${formData.firstName} ${formData.lastName}&body=${encodeURIComponent(
       `Name: ${formData.firstName} ${formData.lastName}
 Phone: ${formData.phone}
 Email: ${formData.email}
@@ -47,7 +47,7 @@ Message: ${formData.message}`
   return (
     <>
       <Head>
-        <title>Contact Us | Vallewview Medical Centre</title>
+        <title>Contact Us | East view Medical Centre</title>
       </Head>
       <div>
         <section className="relative bg-gradient-to-b from-green-50 to-white py-[100px] padding-x">
@@ -81,56 +81,34 @@ Message: ${formData.message}`
               >
                 Location
               </h2>
-              {location === "Whitby" ? (
-                <p
-                  className="text-gray-700 pb-4"
-                  style={{ fontSize: Clamp(1, 1.4) }}
-                >
-                  1916 Dundas St E Unit 6, Whitby
-                </p>
-              ) : (
-                <p
-                  className="text-gray-700 pb-4"
-                  style={{ fontSize: Clamp(1, 1.4) }}
-                >
-                  991 Taunton Rd E B3, Oshawa, ON L1K 0Z7, Canada
-                </p>
-              )}
-
+              <p
+                className="text-gray-700 pb-4"
+                style={{ fontSize: Clamp(1, 1.4) }}
+              >
+                Unit 4 1200 rossland Rd E whitby L1N 8H3
+              </p>
               <div className="rounded-xl overflow-hidden mb-6">
-                {location === "Whitby" ? (
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.1347128752056!2d-78.901594!3d43.889603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d525cd06d2595d%3A0x9f6c4a3af69bb80d!2s1916%20Dundas%20St%20E%2C%20Whitby%2C%20ON%20L1N%202L6%2C%20Canada!5e0!3m2!1sen!2sca!4v1699633078210!5m2!1sen!2sca"
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="w-full"
-                    style={{ height: Clamp(15, 28) }}
-                  ></iframe>
-                ) : (
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.078275663616!2d-78.84900402362726!3d43.94217347107847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d52d5f4c97b78f%3A0xc09f357d032f78e!2s991%20Taunton%20Rd%20E%20B3%2C%20Oshawa%2C%20ON%20L1K%200Z7%2C%20Canada!5e0!3m2!1sen!2sca!4v1710968456285!5m2!1sen!2sca"
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="w-full"
-                    style={{ height: Clamp(15, 28) }}
-                  ></iframe>
-                )}
+                <iframe
+                  src="https://www.google.com/maps?q=Unit%204%2C%201200%20Rossland%20Rd%20E%2C%20Whitby%2C%20ON%20L1N%208H3&z=16&output=embed"
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full"
+                  style={{ height: Clamp(15, 28) }}
+                ></iframe>
               </div>
-
               <div className="flex flex-wrap items-center gap-4">
                 <Link href="tel:+19054341662" className="inline-block">
                   <span className="px-4 py-2 rounded-xl bg-green-50 text-green-700 border border-green-100">
-                    Call: +1 905-434-1662
+                    Call: +1-905-556-3240
                   </span>
                 </Link>
                 <Link
-                  href="mailto:info@Eastviewmedical.ca"
+                  href="mailto:info@eastviewmedical.ca"
                   className="inline-block"
                 >
                   <span className="px-4 py-2 rounded-xl bg-green-50 text-green-700 border border-green-100">
-                    Email: info@Eastviewmedical.ca
+                    Email: info@eastviewmedical.ca
                   </span>
                 </Link>
               </div>
@@ -226,7 +204,7 @@ Message: ${formData.message}`
                 className="text-green-600 mb-6"
                 style={{ fontSize: Clamp(1, 1.4) }}
               >
-                +1 905-434-1662
+                +1-905-556-3240
               </p>
               <div className="text-[16px]">
                 {Object.entries(Dates[0]).map(([day, time]) => (

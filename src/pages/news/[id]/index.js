@@ -108,83 +108,43 @@ const NewsDetail = ({ newsItem }) => {
                 >
                   Contact Us
                 </h3>
-                {location === "Whitby" ? (
-                  <ul className="space-y-4 text-gray-600">
-                    <li className="flex items-start gap-3">
-                      <IoPersonSharp className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                      <p>Eastview Medical Centre</p>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <AiFillHome className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                      <p>1916 Dundas St E Unit 6, Whitby</p>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <FaPhone className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                      <Link
-                        href="tel:+19054341662"
-                        className="hover:text-green-600 transition-colors"
-                      >
-                        +1 905-434-1662
-                      </Link>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <BiSolidMessage className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                      <Link
-                        href="mailto:info@Eastviewmedical.ca"
-                        className="hover:text-green-600 transition-colors"
-                      >
-                        info@Eastviewmedical.ca
-                      </Link>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <FaLink className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                      <Link
-                        href="https://www.Eastviewmedical.ca"
-                        className="hover:text-green-600 transition-colors"
-                      >
-                        www.Eastviewmedical.ca
-                      </Link>
-                    </li>
-                  </ul>
-                ) : (
-                  <ul className="space-y-4 text-gray-600">
-                    <li className="flex items-start gap-3">
-                      <IoPersonSharp className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                      <p>Eastview Medical Centre</p>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <AiFillHome className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                      <p>991 Taunton Rd E B3, Oshawa</p>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <FaPhone className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                      <Link
-                        href="tel:+19053678510"
-                        className="hover:text-green-600 transition-colors"
-                      >
-                        +1 905-367-8510
-                      </Link>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <BiSolidMessage className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                      <Link
-                        href="mailto:Eastviewharmony@gmail.com"
-                        className="hover:text-green-600 transition-colors"
-                      >
-                        Eastviewharmony@gmail.com
-                      </Link>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <FaLink className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                      <Link
-                        href="https://www.Eastviewmedical.ca"
-                        className="hover:text-green-600 transition-colors"
-                      >
-                        www.Eastviewmedical.ca
-                      </Link>
-                    </li>
-                  </ul>
-                )}
+                <ul className="space-y-4 text-gray-600">
+                  <li className="flex items-start gap-3">
+                    <IoPersonSharp className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                    <p>Eastview Medical Centre</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <AiFillHome className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                    <p>Unit 4 1200 rossland Rd E whitby L1N 8H3</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <FaPhone className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                    <Link
+                      href="tel:+19054341662"
+                      className="hover:text-green-600 transition-colors"
+                    >
+                      +1-905-556-3240
+                    </Link>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <BiSolidMessage className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                    <Link
+                      href="mailto:info@eastviewmedical.ca"
+                      className="hover:text-green-600 transition-colors"
+                    >
+                      info@eastviewmedical.ca
+                    </Link>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <FaLink className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                    <Link
+                      href="https://www.eastviewmedical.ca"
+                      className="hover:text-green-600 transition-colors"
+                    >
+                      www.eastviewmedical.ca
+                    </Link>
+                  </li>
+                </ul>
               </div>
 
               {/* Social Media */}
