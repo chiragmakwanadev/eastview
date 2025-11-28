@@ -20,14 +20,14 @@ const Banner = ({
         </p>
         {locationAccess === "Whitby" ? (
           <Link
-            href="mailto:info@Eastviewmedical.ca"
+            href="mailto:info@Care4Youmedical.ca"
             className="px-3 md:px-6 py-1 md:py-2 bg-white text-black font-semibold rounded hover:bg-gray-300 transition duration-300 text-[14px]"
           >
             {buttonText}
           </Link>
         ) : (
           <Link
-            href="mailto:Eastviewharmony@gmail.com"
+            href="mailto:Care4Youharmony@gmail.com"
             className="px-3 md:px-6 py-1 md:py-2 bg-white text-black font-semibold rounded hover:bg-gray-300 transition duration-300 text-[14px]"
           >
             {buttonText}

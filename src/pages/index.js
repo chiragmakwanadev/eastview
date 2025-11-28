@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className={` ${poppins.variable}`}>
       <Head>
-        <title>Eastview Medical Centre </title>
+        <title>Care4You Medical Centre </title>
       </Head>
       <main>
         <Landing />
@@ -41,7 +41,7 @@ export default function Home() {
         <Welcome />
         {/* <Specialist /> */}
         <Why />
-        <Testimonial />
+        {/* <Testimonial /> */}
       </main>
     </div>
   );

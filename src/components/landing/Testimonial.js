@@ -8,14 +8,14 @@ const Data = [
     rating: 5,
     date: "3 months ago",
     review:
-      "If you are looking for a doctor we highly recommend Eastview Medical Centre. My wife and I registered in person and we're assigned a doctor immediately. We met with Dr. Francis Aluh. He is amazing. He took his time with us, has excellent communication skills, and is very easy to speak with. The Clinic reception staff are well organized, pleasant and efficient in calling patient to see their doctor.",
+      "If you are looking for a doctor we highly recommend Care4You Medical Centre. My wife and I registered in person and we're assigned a doctor immediately. We met with Dr. Francis Aluh. He is amazing. He took his time with us, has excellent communication skills, and is very easy to speak with. The Clinic reception staff are well organized, pleasant and efficient in calling patient to see their doctor.",
   },
   {
     reviewer: "Saad Faize",
     rating: 5,
     date: "2 months ago",
     review:
-      "Exceptional care at Eastview Medical Centre! Dr. Emmanuel Erdogan is incredibly supportive, going above and beyond for patient well-being. The help desk and pharmacy staff are professional, efficient, and caring. The quality of care far exceeded my expectations. Highly recommend this clinic and its services!",
+      "Exceptional care at Care4You Medical Centre! Dr. Emmanuel Erdogan is incredibly supportive, going above and beyond for patient well-being. The help desk and pharmacy staff are professional, efficient, and caring. The quality of care far exceeded my expectations. Highly recommend this clinic and its services!",
   },
   {
     reviewer: "telugammayi Dhanasree",
@@ -36,7 +36,7 @@ const Data = [
     rating: 5,
     date: "a month ago",
     review:
-      "Been going here ever since I was 6 and the current staff and environment are the best yet. Reception has improved, pharmacy is great (still have the same pharmacist since my first time there) and doctors are on top of it. The best part though is that any concerns you have regarding staff, appointments, rescheduling etc. are all taken seriously and changes are made. Good work Eastview!",
+      "Been going here ever since I was 6 and the current staff and environment are the best yet. Reception has improved, pharmacy is great (still have the same pharmacist since my first time there) and doctors are on top of it. The best part though is that any concerns you have regarding staff, appointments, rescheduling etc. are all taken seriously and changes are made. Good work Care4You!",
   },
 ];
 

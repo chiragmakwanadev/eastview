@@ -17,7 +17,7 @@ const Welcome = () => {
           style={{ fontSize: Clamp(2, 3) }}
         >
           Welcome to{" "}
-          <span className="text-green-600">Eastview Medical Centre</span>
+          <span className="text-green-600">Care4You Medical Centre</span>
         </h1>
         <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">
           We combine compassionate care with cutting-edge medical expertise to
@@ -30,7 +30,7 @@ const Welcome = () => {
         {/* Text Content */}
         <div className="flex flex-col gap-6 text-gray-700">
           <p className="text-[16px] md:text-[17px] leading-relaxed">
-            At Eastview Medical Centre, your well-being is at the heart of
+            At Care4You Medical Centre, your well-being is at the heart of
             everything we do. Whether you need a routine check-up or urgent
             care, our dedicated doctors and staff are ready to provide the best
             healthcare experience.

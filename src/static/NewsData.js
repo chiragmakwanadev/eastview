@@ -5,11 +5,11 @@ export const Newsdata = [
     tag: "Staffing News",
     title: "Dr. Aloysius’ Departure",
     slug: "Dr-Aloysius-Departure",
-    description: `Eastview Medical Centre is sad to announce that Dr. Aloysius will be leaving the clinic on August 31st.
+    description: `Care4You Medical Centre is sad to announce that Dr. Aloysius will be leaving the clinic on August 31st.
   
       After several years of seeing patients in Whitby, Dr. Aloysius has decided to move to another city and will be closing her on-site practice to enable her to spend more time with her family and travel.
       
-      Her patients will continue to receive care from the other doctors at Eastview Medical Centre.
+      Her patients will continue to receive care from the other doctors at Care4You Medical Centre.
       
       Please contact us if you have any additional questions.`,
   },
@@ -19,11 +19,11 @@ export const Newsdata = [
     tag: "Staffing News",
     title: "Welcome Dr. Abdullah Khan",
     slug: "Welcome-Dr-Abdullah-Khan",
-    description: `Eastview Medical Centre is proud to introduce Dr. Abdullah Khan, an esteemed medical professional with over 12 years of experience since his graduation.
+    description: `Care4You Medical Centre is proud to introduce Dr. Abdullah Khan, an esteemed medical professional with over 12 years of experience since his graduation.
   
       Dr. Khan’s journey in the field of medicine has taken him across borders, as he has practiced in both England and Scotland, honing his skills and gaining invaluable experience.
       
-      With a solid foundation in neurosurgery, Dr. Khan brings a unique and specialized perspective to the medical team at Eastview Medical Centre.
+      With a solid foundation in neurosurgery, Dr. Khan brings a unique and specialized perspective to the medical team at Care4You Medical Centre.
       
       His background in neurosurgery reflects not only his commitment to excellence but also his ability to handle complex medical cases with precision and expertise.
       
@@ -33,14 +33,14 @@ export const Newsdata = [
       
       We take immense pride in having Dr. Abdullah Khan as part of our medical staff. His wealth of experience, international exposure, and commitment to patient well-being make him a respected figure in the medical community.
       
-      When you choose Eastview Medical Centre, you’re not only selecting a healthcare provider but also gaining access to the expertise and care of Dr. Abdullah Khan – a seasoned professional with a passion for delivering top-notch medical services.`,
+      When you choose Care4You Medical Centre, you’re not only selecting a healthcare provider but also gaining access to the expertise and care of Dr. Abdullah Khan – a seasoned professional with a passion for delivering top-notch medical services.`,
   },
   {
     id: 3,
     date: "March 4, 2024",
     tag: "Staffing News",
     title: "Welcome Dr. Rashida Anike Agoro",
-    description: `Eastview Medical Centre is delighted to welcome Dr. Rashida Anike Agoro to our distinguished team of healthcare professionals.
+    description: `Care4You Medical Centre is delighted to welcome Dr. Rashida Anike Agoro to our distinguished team of healthcare professionals.
   
       With a specialized focus on Geriatric Medicine, Women’s Health, Psychiatry, Pediatrics, and General Practice, Dr. Agoro brings a wealth of knowledge and a commitment to comprehensive patient care.
       
@@ -52,9 +52,9 @@ export const Newsdata = [
       
       As a skilled General Practitioner, Dr. Agoro combines clinical excellence with a compassionate approach. Her proficiency in Pediatrics underscores her ability to care for our youngest patients, ensuring their health and well-being from an early age.
       
-      What truly sets Dr. Agoro apart is her commitment to ongoing professional development. This dedication ensures that she remains at the forefront of medical advancements, offering Eastview Medical Centre’s patients the latest and most effective treatments.
+      What truly sets Dr. Agoro apart is her commitment to ongoing professional development. This dedication ensures that she remains at the forefront of medical advancements, offering Care4You Medical Centre’s patients the latest and most effective treatments.
       
-      We are confident that Dr. Rashida Anike Agoro’s presence will not only enrich the medical expertise at Eastview but also contribute to the compassionate and holistic healthcare experience we strive to provide.
+      We are confident that Dr. Rashida Anike Agoro’s presence will not only enrich the medical expertise at Care4You but also contribute to the compassionate and holistic healthcare experience we strive to provide.
       
       Join us in extending a warm welcome to Dr. Agoro, a healthcare professional committed to the well-being of our community.`,
   },

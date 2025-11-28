@@ -141,13 +141,13 @@ const ClinicDetail = () => {
             className={`font-medium`}
             style={{ fontSize: Clamp(2, 4.6), lineHeight: Clamp(2, 4.6) }}
           >
-            WELCOME TO Eastview <br /> MEDICAL CENTRE ({clinic.name})
+            WELCOME TO Care4You <br /> MEDICAL CENTRE ({clinic.name})
           </h1>
           <p className="text-[24px]" style={{ fontSize: Clamp(1, 1.5) }}>
             Your health connected with care!
           </p>
           <Link
-            href="mailto:info@eastviewmedical.ca"
+            href="mailto:info@Care4Youmedical.ca"
             className="w-[100px] xl:w-[150px]"
           >
             <button

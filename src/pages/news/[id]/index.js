@@ -41,7 +41,7 @@ const NewsDetail = ({ newsItem }) => {
   return (
     <>
       <Head>
-        <title>{newsItem.title} | Eastview Medical Centre</title>
+        <title>{newsItem.title} | Care4You Medical Centre</title>
       </Head>
 
       <section className="relative bg-gradient-to-b from-green-50 to-white py-[100px] padding-x">
@@ -95,7 +95,7 @@ const NewsDetail = ({ newsItem }) => {
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-48 w-full flex items-center justify-center">
                 <img
                   src="/images/east-logo-main.jpeg"
-                  alt="Eastview Medical Centre"
+                  alt="Care4You Medical Centre"
                   className="w-[200px] object-cover"
                 />
               </div>
@@ -111,11 +111,11 @@ const NewsDetail = ({ newsItem }) => {
                 <ul className="space-y-4 text-gray-600">
                   <li className="flex items-start gap-3">
                     <IoPersonSharp className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                    <p>Eastview Medical Centre</p>
+                    <p>Care4You Medical Centre</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <AiFillHome className="w-5 h-5 text-green-600 mt-1 shrink-0" />
-                    <p>Unit 4 1200 rossland Rd E whitby L1N 8H3</p>
+                    <p>Unit 3 1200 rossland Rd E whitby L1N 8H3</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <FaPhone className="w-5 h-5 text-green-600 mt-1 shrink-0" />
@@ -129,19 +129,19 @@ const NewsDetail = ({ newsItem }) => {
                   <li className="flex items-start gap-3">
                     <BiSolidMessage className="w-5 h-5 text-green-600 mt-1 shrink-0" />
                     <Link
-                      href="mailto:info@eastviewmedical.ca"
+                      href="mailto:info@Care4Youmedical.ca"
                       className="hover:text-green-600 transition-colors"
                     >
-                      info@eastviewmedical.ca
+                      info@Care4Youmedical.ca
                     </Link>
                   </li>
                   <li className="flex items-start gap-3">
                     <FaLink className="w-5 h-5 text-green-600 mt-1 shrink-0" />
                     <Link
-                      href="https://www.eastviewmedical.ca"
+                      href="https://www.Care4Youmedical.ca"
                       className="hover:text-green-600 transition-colors"
                     >
-                      www.eastviewmedical.ca
+                      www.Care4Youmedical.ca
                     </Link>
                   </li>
                 </ul>
@@ -169,7 +169,7 @@ const NewsDetail = ({ newsItem }) => {
                     <FaFacebookF className="w-5 h-5" />
                   </Link>
                   <Link
-                    href="https://www.instagram.com/Eastviewmedical/"
+                    href="https://www.instagram.com/Care4Youmedical/"
                     className="bg-gray-100 hover:bg-green-600 text-gray-600 hover:text-white p-3 rounded-xl transition-all duration-300"
                   >
                     <FaInstagram className="w-5 h-5" />

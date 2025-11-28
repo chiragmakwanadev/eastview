@@ -31,7 +31,7 @@ const Index = () => {
     <>
       <Head>
         <title>
-          What&apos;s new at Eastview Medical Centre | Eastview Medical Centre
+          What&apos;s new at Care4You Medical Centre | Care4You Medical Centre
         </title>
       </Head>
       <div>
@@ -48,7 +48,7 @@ const Index = () => {
               Stay <span className="text-green-600">Informed</span>
             </h1>
             <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">
-              Get the latest news, updates, and health information from Eastview
+              Get the latest news, updates, and health information from Care4You
               Medical Centre
             </p>
           </div>

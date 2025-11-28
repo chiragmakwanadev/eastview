@@ -30,7 +30,7 @@ const NewsSection = () => {
       {/* Header */}
       <div className="text-center mb-16">
         <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
-          Eastview Updates
+          Care4You Updates
         </span>
         <h2
           className="font-extrabold text-gray-900 leading-snug"
@@ -40,7 +40,7 @@ const NewsSection = () => {
         </h2>
         <p className="text-gray-600 mt-3 text-[15px] md:text-[17px] max-w-2xl mx-auto leading-relaxed">
           Discover recent articles, health tips, and clinic updates from
-          Eastview Medical Centre.
+          Care4You Medical Centre.
         </p>
       </div>
 

@@ -8,7 +8,7 @@ export const PolicyData = {
           image: "/images/clinic-2.jpg",
           title: "Health Cards",
           description:
-            "Please ensure you have your valid health card with you for every visit to Eastview Medical Center. Our Front Staff will request it during check-in. Failure to present a valid health card may result in being charged at regular OHIP rates before receiving care. Keeping your health card up to date is essential for accessing healthcare and preventing fraud. If your health card is lost, stolen, or damaged, please contact the Ministry of Health and Long Term Care info line at 1-800-664-8998. For address or name changes, visit or contact your local OHIP office.",
+            "Please ensure you have your valid health card with you for every visit to Care4You Medical Center. Our Front Staff will request it during check-in. Failure to present a valid health card may result in being charged at regular OHIP rates before receiving care. Keeping your health card up to date is essential for accessing healthcare and preventing fraud. If your health card is lost, stolen, or damaged, please contact the Ministry of Health and Long Term Care info line at 1-800-664-8998. For address or name changes, visit or contact your local OHIP office.",
         },
         {
           image: "/images/clinic-3.jpg",
@@ -50,7 +50,7 @@ export const PolicyData = {
 
           title: "Prescription Renewal",
           description:
-            "For quality care, medication refills should be addressed during your appointment. Non-emergency refill appointments should be scheduled two weeks in advance of your prescription running out. Eastview Medical Center has a 'No Phone/Fax Prescription Renewal Policy' and does not refill narcotics/controlled medications. We recommend contacting the providers who initially prescribed them for refills.",
+            "For quality care, medication refills should be addressed during your appointment. Non-emergency refill appointments should be scheduled two weeks in advance of your prescription running out. Care4You Medical Center has a 'No Phone/Fax Prescription Renewal Policy' and does not refill narcotics/controlled medications. We recommend contacting the providers who initially prescribed them for refills.",
         },
         {
           image: "/images/clinic-9.jpg",
@@ -94,9 +94,9 @@ export const PolicyData = {
         },
         {
           title:
-            "Where can I find Eastview Medical Center’s contact information and address?",
+            "Where can I find Care4You Medical Center’s contact information and address?",
           description:
-            "You can find our contact information and address on our website at www.Eastviewmedical.ca.",
+            "You can find our contact information and address on our website at www.Care4Youmedical.ca.",
         },
         {
           title: "Can I receive the registration form via email?",
@@ -155,7 +155,7 @@ export const PolicyData = {
         {
           title: "Cooperation and Understanding",
           description:
-            "We appreciate your cooperation and understanding of our prescription renewal policy. By adhering to these guidelines, we can ensure that your medications are managed safely and effectively, providing you with the highest standard of care at Eastview Medical Centre.",
+            "We appreciate your cooperation and understanding of our prescription renewal policy. By adhering to these guidelines, we can ensure that your medications are managed safely and effectively, providing you with the highest standard of care at Care4You Medical Centre.",
         },
       ],
     },
@@ -203,7 +203,7 @@ export const PolicyData = {
         {
           title: "Safety and Respect",
           description:
-            "Eastview Medical Centre provides respectful, compassionate, and non-discriminatory care aligned with patients’ values, beliefs, and safety. Patients are informed about unexpected occurrences and involved in subsequent care changes.",
+            "Care4You Medical Centre provides respectful, compassionate, and non-discriminatory care aligned with patients’ values, beliefs, and safety. Patients are informed about unexpected occurrences and involved in subsequent care changes.",
         },
         {
           title: "Active Participation in Your Care and Treatment",
@@ -225,14 +225,14 @@ export const PolicyData = {
       item: [
         {
           image: "/images/health-1.jpg",
-          title: "Required for Every Visit to Eastview Medical Centre",
+          title: "Required for Every Visit to Care4You Medical Centre",
           description: `We kindly request that you bring your health card to each appointment.
       
             Our receptionists will ask you to present your health card during the check-in process for every visit. It is your responsibility to carry a valid and up-to-date health card.
             
-            At Eastview Medical Centre, your healthcare services are covered through your health card. According to the policy of the Ontario Ministry of Health, a valid provincial health card (Ontario or any other province) is mandatory for each visit.
+            At Care4You Medical Centre, your healthcare services are covered through your health card. According to the policy of the Ontario Ministry of Health, a valid provincial health card (Ontario or any other province) is mandatory for each visit.
             
-            Failure to provide a valid health card at the time of your visit may result in charges based on our list of Uninsured Services. For further information, please refer to the Eastview Medical Centre’s Uninsured Services list as of January 1, 2023.
+            Failure to provide a valid health card at the time of your visit may result in charges based on our list of Uninsured Services. For further information, please refer to the Care4You Medical Centre’s Uninsured Services list as of January 1, 2023.
             
             If you are able to present a valid health card within 30 days of your visit, any amount you have paid will be reimbursed, excluding our administrative fee.`,
         },
@@ -254,12 +254,12 @@ export const PolicyData = {
       item: [
         {
           description:
-            "At Eastview Medical Centre, we would like to outline our policy regarding switching or transferring to another family physician within our clinic. Please take note of the following points:",
+            "At Care4You Medical Centre, we would like to outline our policy regarding switching or transferring to another family physician within our clinic. Please take note of the following points:",
         },
         {
           title: "Qualifications and Practice Approach",
           description:
-            "All of our physicians at Eastview Medical Centre are fully qualified to provide primary care to patients of all ages and genders. They practice in a similar manner, ensuring consistent and comprehensive healthcare services.",
+            "All of our physicians at Care4You Medical Centre are fully qualified to provide primary care to patients of all ages and genders. They practice in a similar manner, ensuring consistent and comprehensive healthcare services.",
         },
         {
           title: "Collaborative Team Approach",
@@ -277,7 +277,7 @@ export const PolicyData = {
       
             We want to emphasize that this policy does not hinder your access to a physician. Fortunately, being located in Durham provides a high density of healthcare providers, allowing patients to seek care from new physicians at alternative clinics.
             
-            We appreciate your understanding of our policy as we strive to maintain the highest standards of healthcare delivery and ensure the best possible outcomes for our patients at Eastview Medical Centre.`,
+            We appreciate your understanding of our policy as we strive to maintain the highest standards of healthcare delivery and ensure the best possible outcomes for our patients at Care4You Medical Centre.`,
         },
       ],
     },
@@ -288,7 +288,7 @@ export const PolicyData = {
       slug: "test-results-notification",
       item: [
         {
-          description: `In order to manage the high volume of test results received at Eastview Medical Centre on a daily basis, we would like to inform you of our notification process.
+          description: `In order to manage the high volume of test results received at Care4You Medical Centre on a daily basis, we would like to inform you of our notification process.
       
             For normal test results, we will not provide a separate report to patients. However, we assure you that our medical team carefully reviews all results to ensure your health is monitored appropriately.
             
@@ -298,7 +298,7 @@ export const PolicyData = {
             
             Please note that for blood work results, we recommend allowing at least 48 hours, and for x-rays or other investigative tests, at least 72 hours for the results to be processed and available.
             
-            We value your understanding and cooperation as we strive to provide comprehensive and efficient healthcare services at Eastview Medical Centre.`,
+            We value your understanding and cooperation as we strive to provide comprehensive and efficient healthcare services at Care4You Medical Centre.`,
         },
       ],
     },

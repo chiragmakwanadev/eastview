@@ -74,25 +74,31 @@ const Landing = () => {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 bg-white bg-opacity-90 text-green-800 px-3 py-2 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium backdrop-blur-sm">
                 <DiCssdeck size={16} className="sm:w-5 sm:h-5" />
-                <span className="hidden xs:inline">Durham Region Healthcare</span>
+                <span className="hidden xs:inline">
+                  Durham Region Healthcare
+                </span>
                 <span className="xs:hidden">Durham Healthcare</span>
               </div>
 
               {/* Main Heading */}
               <div className="space-y-3 sm:space-y-4">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                  Welcome to <span className="text-green-400">Eastview</span>
+                  Welcome to <span className="text-green-400">Care4You</span>
                   <br className="hidden sm:block" />
                   <span className="sm:hidden"> </span>Medical Centre
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-gray-100 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Your health connected with care. Professional medical services in the heart of Durham Region.
+                  Your health connected with care. Professional medical services
+                  in the heart of Durham Region.
                 </p>
               </div>
 
               {/* CTA */}
               <div className="">
-                <p className="text-sm sm:text-base text-gray-200 max-w-xl mx-auto lg:mx-0">Providing comprehensive healthcare services in the Durham Region</p>
+                <p className="text-sm sm:text-base text-gray-200 max-w-xl mx-auto lg:mx-0">
+                  Providing comprehensive healthcare services in the Durham
+                  Region
+                </p>
               </div>
             </div>
 
@@ -101,24 +107,36 @@ const Landing = () => {
               {/* Location Card */}
               <div className="bg-transparent bg-opacity-95 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100">
                 <div className="flex items-center justify-between mb-3 sm:mb-4">
-                  <h3 className="text-base sm:text-lg font-semibold text-white">Location</h3>
+                  <h3 className="text-base sm:text-lg font-semibold text-white">
+                    Location
+                  </h3>
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-green-600 font-bold text-xs sm:text-sm">V</span>
+                    <span className="text-green-600 font-bold text-xs sm:text-sm">
+                      V
+                    </span>
                   </div>
                   <div className="min-w-0">
-                    <p className="font-semibold text-white text-sm sm:text-base">Whitby (Dundas)</p>
-                    <p className="text-xs sm:text-sm text-white">Eastview Medical Centre</p>
+                    <p className="font-semibold text-white text-sm sm:text-base">
+                      Care4You (Rossland)
+                    </p>
+                    <p className="text-xs sm:text-sm text-white">
+                      Care4You Medical Centre
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* Pharmacy Info */}
               <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-4 sm:p-6 text-white">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">East Whitby IDA Pharmacy</h2>
-                <p className="text-green-100 mb-3 sm:mb-4 text-sm sm:text-base">Professional pharmacy services in the heart of Whitby</p>
+                <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">
+                  East Whitby IDA Pharmacy
+                </h2>
+                <p className="text-green-100 mb-3 sm:mb-4 text-sm sm:text-base">
+                  Professional pharmacy services in the heart of Whitby
+                </p>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs sm:text-sm">
                   <div className="flex items-center gap-2">
                     <div className="w-1 h-1 bg-green-300 rounded-full flex-shrink-0"></div>
@@ -136,7 +154,9 @@ const Landing = () => {
                 {linkData.map(({ href, text }, index) => (
                   <Link key={index} href={href} className="group">
                     <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 sm:p-5 shadow-lg border border-white border-opacity-20 hover:shadow-xl hover:border-green-300 hover:bg-opacity-20 transition-all duration-300 group-hover:scale-105">
-                      <p className="text-sm sm:text-base font-medium text-white text-center group-hover:text-green-300 leading-tight">{text}</p>
+                      <p className="text-sm sm:text-base font-medium text-white text-center group-hover:text-green-300 leading-tight">
+                        {text}
+                      </p>
                     </div>
                   </Link>
                 ))}

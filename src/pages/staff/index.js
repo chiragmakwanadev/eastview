@@ -58,7 +58,7 @@ const Index = () => {
     <>
       <Head>
         <title>
-          Whitby Doctors at Eastview Medical | Eastview Medical Centre
+          Whitby Doctors at Care4You Medical | Care4You Medical Centre
         </title>
       </Head>
 

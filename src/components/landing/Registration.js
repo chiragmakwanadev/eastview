@@ -40,7 +40,7 @@ const Registration = () => {
         {/* Left Section - Map & Location */}
         <div className="space-y-6">
           <iframe
-            src="https://www.google.com/maps?q=Unit%204%2C%201200%20Rossland%20Rd%20E%2C%20Whitby%2C%20ON%20L1N%208H3&z=16&output=embed"
+            src="https://www.google.com/maps?q=Unit%203%2C%201200%20Rossland%20Rd%20E%2C%20Whitby%2C%20ON%20L1N%208H3&z=16&output=embed"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -54,9 +54,7 @@ const Registration = () => {
               <h2 className="font-semibold text-lg">Our Location</h2>
             </div>
             <p className="text-gray-700 font-medium">
-              {isWhitby
-                ? "1916 Dundas St E Unit 6, Whitby"
-                : "991 Taunton Rd E B3, Oshawa, ON L1K 0Z7, Canada"}
+              Unit 3 1200 rossland Rd E whitby L1N 8H3
             </p>
             <p className="text-sm text-gray-500">
               🚗 Accessible Parking Available
@@ -76,7 +74,7 @@ const Registration = () => {
             <p className="text-gray-700 leading-relaxed text-base">
               Register as a new patient online from the comfort of your home, or
               visit our clinic and let our friendly staff assist you. At
-              Eastview Medical Centre, we ensure a smooth registration process
+              Care4You Medical Centre, we ensure a smooth registration process
               and provide high-quality, compassionate care.
             </p>
           </div>

@@ -46,7 +46,7 @@ const PolicySlugPage = ({ policyTopic }) => {
   return (
     <>
       <Head>
-        <title>{policyTopic.topic} | Eastview Medical Centre</title>
+        <title>{policyTopic.topic} | Care4You Medical Centre</title>
       </Head>
       <div className="policy-page">
         <section className="relative bg-gray-50 py-[100px] padding-x">

@@ -19,7 +19,7 @@ const Footer = () => {
           >
             <h3 className="font-semibold mb-2">ADDRESS</h3>
             <p>
-              Unit 4 1200 rossland Rd E whitby
+              Unit 3 1200 rossland Rd E whitby
               <br />
               L1N 8H3
             </p>
@@ -48,7 +48,7 @@ const Footer = () => {
               <FaFacebookF size={20} />
             </Link>
             <Link
-              href="https://www.instagram.com/Eastviewmedical/"
+              href="https://www.instagram.com/Care4Youmedical/"
               className="hover:text-blue-500"
             >
               <FaInstagram size={20} />
@@ -67,23 +67,23 @@ const Footer = () => {
             </li>
             <li>
               <span className="font-semibold">FAX US: </span>
-              {location === "Whitby" ? "+1 905-747-0999" : "289-764-1231"}
+              +1-905-556-3244
             </li>
             <li>
               <span className="font-semibold">EMAIL: </span>
               {location === "Whitby" ? (
                 <Link
-                  href="mailto:info@eastviewmedical.ca"
+                  href="mailto:info@Care4Youmedical.ca"
                   className="hover:text-blue-400"
                 >
-                  info@eastviewmedical.ca
+                  info@Care4Youmedical.ca
                 </Link>
               ) : (
                 <Link
-                  href="mailto:eastviewharmony@gmail.com"
+                  href="mailto:Care4Youharmony@gmail.com"
                   className="hover:text-blue-400"
                 >
-                  eastviewharmony@gmail.com
+                  Care4Youharmony@gmail.com
                 </Link>
               )}
             </li>
@@ -167,7 +167,7 @@ const Footer = () => {
         style={{ fontSize: Clamp(0.75, 1) }}
       >
         <p>
-          © 2024 Eastview Medical Centre | Powered by{" "}
+          © 2024 Care4You Medical Centre | Powered by{" "}
           <Link
             href="https://www.Vtechedge.com"
             className="hover:text-blue-400"

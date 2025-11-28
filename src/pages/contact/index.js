@@ -32,7 +32,7 @@ const Index = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailto = `mailto:info@eastviewmedical.ca?subject=New Inquiry from ${formData.firstName} ${formData.lastName}&body=${encodeURIComponent(
+    const mailto = `mailto:info@Care4Youmedical.ca?subject=New Inquiry from ${formData.firstName} ${formData.lastName}&body=${encodeURIComponent(
       `Name: ${formData.firstName} ${formData.lastName}
 Phone: ${formData.phone}
 Email: ${formData.email}
@@ -85,11 +85,11 @@ Message: ${formData.message}`
                 className="text-gray-700 pb-4"
                 style={{ fontSize: Clamp(1, 1.4) }}
               >
-                Unit 4 1200 rossland Rd E whitby L1N 8H3
+                Unit 3 1200 rossland Rd E whitby L1N 8H3
               </p>
               <div className="rounded-xl overflow-hidden mb-6">
                 <iframe
-                  src="https://www.google.com/maps?q=Unit%204%2C%201200%20Rossland%20Rd%20E%2C%20Whitby%2C%20ON%20L1N%208H3&z=16&output=embed"
+                  src="https://www.google.com/maps?q=Unit%203%2C%201200%20Rossland%20Rd%20E%2C%20Whitby%2C%20ON%20L1N%208H3&z=16&output=embed"
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -104,11 +104,11 @@ Message: ${formData.message}`
                   </span>
                 </Link>
                 <Link
-                  href="mailto:info@eastviewmedical.ca"
+                  href="mailto:info@Care4Youmedical.ca"
                   className="inline-block"
                 >
                   <span className="px-4 py-2 rounded-xl bg-green-50 text-green-700 border border-green-100">
-                    Email: info@eastviewmedical.ca
+                    Email: info@Care4Youmedical.ca
                   </span>
                 </Link>
               </div>
@@ -192,7 +192,7 @@ Message: ${formData.message}`
           <div className="max-w-7xl mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8 mt-8">
             <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
               <p className="text-[14px] md:text-[16px] text-gray-600">
-                Eastview Medical Centre
+                Care4You Medical Centre
               </p>
               <h3
                 className="font-semibold text-green-600 mt-1 mb-4"
@@ -204,7 +204,7 @@ Message: ${formData.message}`
                 className="text-green-600 mb-6"
                 style={{ fontSize: Clamp(1, 1.4) }}
               >
-                +1-905-556-3240
+                +1-905-556-3240\
               </p>
               <div className="text-[16px]">
                 {Object.entries(Dates[0]).map(([day, time]) => (

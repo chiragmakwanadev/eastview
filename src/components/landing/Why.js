@@ -59,7 +59,7 @@ const Why = () => {
           className="font-bold text-gray-900 leading-snug"
           style={{ fontSize: Clamp(2, 3) }}
         >
-          Why Choose <span className="text-green-600">Eastview Medical?</span>
+          Why Choose <span className="text-green-600">Care4You Medical?</span>
         </h1>
       </div>
 
@@ -70,7 +70,7 @@ const Why = () => {
           <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition duration-300">
             <img
               src="/images/per.jpg"
-              alt="Why Eastview Medical"
+              alt="Why Care4You Medical"
               className="w-full h-[450px] object-cover"
             />
           </div>
