@@ -14,7 +14,7 @@ const Index = () => {
         <img src={item.image || "/default-image.jpg"} alt={item.name} className="w-[100%] h-[370px] object-cover rounded-lg overflow-hidden" />
         <div className="flex flex-col gap-2 pt-3">
           <h3 className="text-[14px] font-normal">{item.title}</h3>
-          <p className="text-green-600 font-bold" style={{ fontSize: Clamp(1, 1.25) }}>
+          <p className="text-[#079ADF] font-bold" style={{ fontSize: Clamp(1, 1.25) }}>
             {item.name}
           </p>
         </div>
@@ -28,14 +28,14 @@ const Index = () => {
         <div className="flex mb-8">
           <button
             onClick={() => setActiveTab("doctors")}
-            className={`px-6 py-2 ${activeTab === "doctors" ? "bg-green-100 p-10 rounded-xl text-green-800" : "text-gray-500"}`}
+            className={`px-6 py-2 ${activeTab === "doctors" ? "bg-blue-50 p-10 rounded-xl text-[#079ADF]" : "text-gray-500"}`}
             style={{ fontSize: Clamp(1, 1.5) }}
           >
             Doctors
           </button>
           <button
             onClick={() => setActiveTab("pharmacists")}
-            className={`px-6 py-2 ${activeTab === "pharmacists" ? "bg-green-100 p-10 rounded-xl text-green-800" : "text-gray-500"}`}
+            className={`px-6 py-2 ${activeTab === "pharmacists" ? "bg-blue-50 p-10 rounded-xl text-[#079ADF]" : "text-gray-500"}`}
             style={{ fontSize: Clamp(1, 1.5) }}
           >
             Pharmacists

@@ -50,17 +50,17 @@ Message: ${formData.message}`
         <title>Contact Us | East view Medical Centre</title>
       </Head>
       <div>
-        <section className="relative bg-gradient-to-b from-green-50 to-white py-[100px] padding-x">
+        <section className="relative bg-gradient-to-b from-blue-50 to-white py-[100px] padding-x">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+            <span className="inline-block bg-blue-50 text-[#079ADF] text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
               We&apos;re Here to Help
             </span>
             <h1
               className="font-bold text-gray-900 leading-snug"
               style={{ fontSize: Clamp(2, 3) }}
             >
-              Get in <span className="text-green-600">Touch</span>
+              Get in <span className="text-[#079ADF]">Touch</span>
             </h1>
             <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">
               Questions, appointments, or feedback — our team is ready to assist
@@ -76,7 +76,7 @@ Message: ${formData.message}`
                 Accessible Parking Available
               </p>
               <h2
-                className="font-semibold text-green-600 mt-2"
+                className="font-semibold text-[#079ADF] mt-2"
                 style={{ fontSize: Clamp(1.2, 1.8) }}
               >
                 Location
@@ -99,7 +99,7 @@ Message: ${formData.message}`
               </div>
               <div className="flex flex-wrap items-center gap-4">
                 <Link href="tel:+19054341662" className="inline-block">
-                  <span className="px-4 py-2 rounded-xl bg-green-50 text-green-700 border border-green-100">
+                  <span className="px-4 py-2 rounded-xl bg-blue-50 text-[#079ADF] border border-blue-100">
                     Call: +1-905-556-3240
                   </span>
                 </Link>
@@ -107,7 +107,7 @@ Message: ${formData.message}`
                   href="mailto:info@Care4Youmedical.ca"
                   className="inline-block"
                 >
-                  <span className="px-4 py-2 rounded-xl bg-green-50 text-green-700 border border-green-100">
+                  <span className="px-4 py-2 rounded-xl bg-blue-50 text-[#079ADF] border border-blue-100">
                     Email: info@Care4Youmedical.ca
                   </span>
                 </Link>
@@ -116,7 +116,7 @@ Message: ${formData.message}`
 
             {/* Form Card */}
             <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-              <h2 className="text-[22px] md:text-[24px] font-semibold mb-4 text-green-600">
+              <h2 className="text-[22px] md:text-[24px] font-semibold mb-4 text-[#079ADF]">
                 New Patient Registration Form
               </h2>
               <form
@@ -130,7 +130,7 @@ Message: ${formData.message}`
                   value={formData.firstName}
                   onChange={handleChange}
                   required
-                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-200 col-span-1"
+                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-200 col-span-1"
                 />
                 <input
                   type="text"
@@ -139,7 +139,7 @@ Message: ${formData.message}`
                   value={formData.lastName}
                   onChange={handleChange}
                   required
-                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-200 col-span-1"
+                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-200 col-span-1"
                 />
                 <input
                   type="tel"
@@ -148,7 +148,7 @@ Message: ${formData.message}`
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-200 col-span-1"
+                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-200 col-span-1"
                 />
                 <input
                   type="email"
@@ -157,14 +157,14 @@ Message: ${formData.message}`
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-200 col-span-1"
+                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-200 col-span-1"
                 />
                 <select
                   name="city"
                   value={formData.city}
                   onChange={handleChange}
                   required
-                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-200 col-span-1"
+                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-200 col-span-1"
                 >
                   <option value="">Select City</option>
                   <option value="Whitby">Whitby</option>
@@ -176,11 +176,11 @@ Message: ${formData.message}`
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-200 h-32 md:col-span-2"
+                  className="border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-200 h-32 md:col-span-2"
                 ></textarea>
                 <button
                   type="submit"
-                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 md:col-span-2"
+                  className="bg-[#079ADF] hover:bg-[#1A4087] text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 md:col-span-2"
                 >
                   Submit
                 </button>
@@ -195,13 +195,13 @@ Message: ${formData.message}`
                 Care4You Medical Centre
               </p>
               <h3
-                className="font-semibold text-green-600 mt-1 mb-4"
+                className="font-semibold text-[#079ADF] mt-1 mb-4"
                 style={{ fontSize: Clamp(1.2, 1.8) }}
               >
                 Visit a Doctor
               </h3>
               <p
-                className="text-green-600 mb-6"
+                className="text-[#079ADF] mb-6"
                 style={{ fontSize: Clamp(1, 1.4) }}
               >
                 +1-905-556-3240\

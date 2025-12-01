@@ -52,14 +52,14 @@ const Why = () => {
     <section className="relative bg-gradient-to-b from-gray-50 to-white py-[100px] padding-x">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+        <span className="inline-block bg-blue-50 text-[#079ADF] text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
           Your health connected with care!
         </span>
         <h1
           className="font-bold text-gray-900 leading-snug"
           style={{ fontSize: Clamp(2, 3) }}
         >
-          Why Choose <span className="text-green-600">Care4You Medical?</span>
+          Why Choose <span className="text-[#079ADF]">Care4You Medical?</span>
         </h1>
       </div>
 
@@ -75,7 +75,7 @@ const Why = () => {
             />
           </div>
           {/* Decorative element */}
-          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-green-100 rounded-full blur-2xl opacity-50"></div>
+          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-100 rounded-full blur-2xl opacity-50"></div>
         </div>
 
         {/* Right Side FAQ */}
@@ -92,9 +92,9 @@ const Why = () => {
                 >
                   {faq.question}
                   {openIndex === index ? (
-                    <HiMinus className="w-5 h-5 text-green-600" />
+                    <HiMinus className="w-5 h-5 text-[#079ADF]" />
                   ) : (
-                    <HiPlus className="w-5 h-5 text-green-600" />
+                    <HiPlus className="w-5 h-5 text-[#079ADF]" />
                   )}
                 </button>
 

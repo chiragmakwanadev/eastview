@@ -44,10 +44,10 @@ const NewsDetail = ({ newsItem }) => {
         <title>{newsItem.title} | Care4You Medical Centre</title>
       </Head>
 
-      <section className="relative bg-gradient-to-b from-green-50 to-white py-[100px] padding-x">
+      <section className="relative bg-gradient-to-b from-blue-50 to-white py-[100px] padding-x">
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+          <span className="inline-block bg-blue-50 text-[#079ADF] text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
             Latest News
           </span>
           <h1
@@ -58,7 +58,7 @@ const NewsDetail = ({ newsItem }) => {
           </h1>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
             <p className="text-gray-500 text-sm font-medium">{newsItem.date}</p>
-            <span className="text-xs text-green-600 bg-green-100 px-3 py-1 rounded-full font-medium">
+            <span className="text-xs text-[#079ADF] bg-blue-50 px-3 py-1 rounded-full font-medium">
               {newsItem.tag}
             </span>
           </div>
@@ -80,7 +80,7 @@ const NewsDetail = ({ newsItem }) => {
 
               <div className="mt-8 pt-6 border-t border-gray-100">
                 <Link href="/contact" className="inline-block">
-                  <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl font-medium transition-all duration-300 hover:shadow-md">
+                  <button className="bg-[#079ADF] hover:bg-[#1A4087] text-white px-8 py-3 rounded-xl font-medium transition-all duration-300 hover:shadow-md">
                     Contact Us
                   </button>
                 </Link>
@@ -103,43 +103,43 @@ const NewsDetail = ({ newsItem }) => {
               {/* Contact Info */}
               <div className="bg-white rounded-2xl shadow-lg p-6">
                 <h3
-                  className="font-bold text-green-600 mb-4"
+                  className="font-bold text-[#079ADF] mb-4"
                   style={{ fontSize: Clamp(1.2, 1.5) }}
                 >
                   Contact Us
                 </h3>
                 <ul className="space-y-4 text-gray-600">
                   <li className="flex items-start gap-3">
-                    <IoPersonSharp className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                    <IoPersonSharp className="w-5 h-5 text-[#079ADF] mt-1 shrink-0" />
                     <p>Care4You Medical Centre</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <AiFillHome className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                    <AiFillHome className="w-5 h-5 text-[#079ADF] mt-1 shrink-0" />
                     <p>Unit 3 1200 rossland Rd E whitby L1N 8H3</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <FaPhone className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                    <FaPhone className="w-5 h-5 text-[#079ADF] mt-1 shrink-0" />
                     <Link
                       href="tel:+19054341662"
-                      className="hover:text-green-600 transition-colors"
+                      className="hover:text-[#079ADF] transition-colors"
                     >
                       +1-905-556-3240
                     </Link>
                   </li>
                   <li className="flex items-start gap-3">
-                    <BiSolidMessage className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                    <BiSolidMessage className="w-5 h-5 text-[#079ADF] mt-1 shrink-0" />
                     <Link
                       href="mailto:info@Care4Youmedical.ca"
-                      className="hover:text-green-600 transition-colors"
+                      className="hover:text-[#079ADF] transition-colors"
                     >
                       info@Care4Youmedical.ca
                     </Link>
                   </li>
                   <li className="flex items-start gap-3">
-                    <FaLink className="w-5 h-5 text-green-600 mt-1 shrink-0" />
+                    <FaLink className="w-5 h-5 text-[#079ADF] mt-1 shrink-0" />
                     <Link
                       href="https://www.Care4Youmedical.ca"
-                      className="hover:text-green-600 transition-colors"
+                      className="hover:text-[#079ADF] transition-colors"
                     >
                       www.Care4Youmedical.ca
                     </Link>
@@ -150,7 +150,7 @@ const NewsDetail = ({ newsItem }) => {
               {/* Social Media */}
               <div className="bg-white rounded-2xl shadow-lg p-6">
                 <h3
-                  className="font-bold text-green-600 mb-4"
+                  className="font-bold text-[#079ADF] mb-4"
                   style={{ fontSize: Clamp(1.2, 1.5) }}
                 >
                   Follow Us
@@ -158,19 +158,19 @@ const NewsDetail = ({ newsItem }) => {
                 <div className="flex gap-3">
                   <Link
                     href="https://x.com/vmcwhitby"
-                    className="bg-gray-100 hover:bg-green-600 text-gray-600 hover:text-white p-3 rounded-xl transition-all duration-300"
+                    className="bg-gray-100 hover:bg-[#079ADF] text-gray-600 hover:text-white p-3 rounded-xl transition-all duration-300"
                   >
                     <FaXTwitter className="w-5 h-5" />
                   </Link>
                   <Link
                     href="https://www.facebook.com/profile.php?id=100094622814558"
-                    className="bg-gray-100 hover:bg-green-600 text-gray-600 hover:text-white p-3 rounded-xl transition-all duration-300"
+                    className="bg-gray-100 hover:bg-[#079ADF] text-gray-600 hover:text-white p-3 rounded-xl transition-all duration-300"
                   >
                     <FaFacebookF className="w-5 h-5" />
                   </Link>
                   <Link
                     href="https://www.instagram.com/Care4Youmedical/"
-                    className="bg-gray-100 hover:bg-green-600 text-gray-600 hover:text-white p-3 rounded-xl transition-all duration-300"
+                    className="bg-gray-100 hover:bg-[#079ADF] text-gray-600 hover:text-white p-3 rounded-xl transition-all duration-300"
                   >
                     <FaInstagram className="w-5 h-5" />
                   </Link>

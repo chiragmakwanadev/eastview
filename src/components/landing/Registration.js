@@ -49,7 +49,7 @@ const Registration = () => {
           ></iframe>
 
           <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-3">
-            <div className="flex items-center gap-2 text-green-700">
+            <div className="flex items-center gap-2 text-[#079ADF]">
               <HiMapPin className="w-5 h-5" />
               <h2 className="font-semibold text-lg">Our Location</h2>
             </div>
@@ -67,7 +67,7 @@ const Registration = () => {
           {/* Intro */}
           <div className="bg-white rounded-2xl shadow-md p-6">
             <div className="flex items-center justify-center mb-4">
-              <span className="text-sm font-medium text-green-600 bg-green-50 px-4 py-2 rounded-full">
+              <span className="text-sm font-medium text-[#079ADF] bg-blue-50 px-4 py-2 rounded-full">
                 Accepting New Patients
               </span>
             </div>
@@ -81,7 +81,7 @@ const Registration = () => {
 
           {/* Clinic Timings */}
           <div className="bg-white rounded-2xl shadow-md p-6">
-            <div className="flex items-center gap-2 text-green-700 mb-4">
+            <div className="flex items-center gap-2 text-[#079ADF] mb-4">
               <HiClock className="w-5 h-5" />
               <h2 className="font-semibold text-lg">Clinic Timings</h2>
             </div>
@@ -106,7 +106,7 @@ const Registration = () => {
 
           {/* Policy */}
           <div className="bg-white rounded-2xl shadow-md p-6">
-            <div className="flex items-center gap-2 text-green-700 mb-3">
+            <div className="flex items-center gap-2 text-[#079ADF] mb-3">
               <HiUserGroup className="w-5 h-5" />
               <h2 className="font-semibold text-lg">Cancellation Policy</h2>
             </div>

@@ -53,10 +53,10 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <section className="relative py-[100px] bg-gradient-to-r from-green-50 via-white to-green-50">
+    <section className="relative py-[100px] bg-gradient-to-r from-blue-50 via-white to-blue-50">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+        <span className="inline-block bg-blue-50 text-[#079ADF] text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
           Testimonials
         </span>
         <h2
@@ -93,7 +93,7 @@ const Testimonial = () => {
             <button
               key={index}
               onClick={() => setCurrent(index)}
-              className={`w-3 h-3 rounded-full transition ${index === current ? "bg-green-600" : "bg-gray-300"}`}
+              className={`w-3 h-3 rounded-full transition ${index === current ? "bg-[#079ADF]" : "bg-gray-300"}`}
             />
           ))}
         </div>

@@ -35,17 +35,17 @@ const Index = () => {
         </title>
       </Head>
       <div>
-        <section className="relative bg-gradient-to-b from-green-50 to-white py-[100px] padding-x">
+        <section className="relative bg-gradient-to-b from-blue-50 to-white py-[100px] padding-x">
           {/* Header */}
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+            <span className="inline-block bg-blue-50 text-[#079ADF] text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
               Latest News & Updates
             </span>
             <h1
               className="font-bold text-gray-900 leading-snug"
               style={{ fontSize: Clamp(2, 3) }}
             >
-              Stay <span className="text-green-600">Informed</span>
+              Stay <span className="text-[#079ADF]">Informed</span>
             </h1>
             <p className="text-gray-600 mt-4 text-[16px] md:text-[18px] leading-relaxed">
               Get the latest news, updates, and health information from Care4You
@@ -66,13 +66,13 @@ const Index = () => {
                       <p className="text-gray-500 text-sm font-medium">
                         {news.date}
                       </p>
-                      <span className="text-xs text-green-600 bg-green-100 px-3 py-1 rounded-full font-medium">
+                      <span className="text-xs text-[#079ADF] bg-blue-50 px-3 py-1 rounded-full font-medium">
                         {news.tag}
                       </span>
                     </div>
 
                     <h2
-                      className="font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300"
+                      className="font-bold text-gray-900 mb-4 group-hover:text-[#079ADF] transition-colors duration-300"
                       style={{ fontSize: Clamp(1.1, 1.4) }}
                     >
                       {news.title}
@@ -83,7 +83,7 @@ const Index = () => {
                     </p>
 
                     <Link href={`/news/${news.id}`} className="inline-block">
-                      <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:shadow-md w-full">
+                      <button className="bg-[#079ADF] hover:bg-[#1A4087] text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:shadow-md w-full">
                         Read More
                       </button>
                     </Link>
@@ -100,7 +100,7 @@ const Index = () => {
                 className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
                   currentPage === 1
                     ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                    : "bg-white text-gray-700 hover:bg-green-50 hover:text-green-600 border border-gray-200 hover:border-green-200"
+                    : "bg-white text-gray-700 hover:bg-blue-50 hover:text-[#079ADF] border border-gray-200 hover:border-blue-200"
                 }`}
                 style={{ fontSize: Clamp(0.9, 1.1) }}
               >
@@ -122,7 +122,7 @@ const Index = () => {
                 className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
                   currentPage === totalPages
                     ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                    : "bg-white text-gray-700 hover:bg-green-50 hover:text-green-600 border border-gray-200 hover:border-green-200"
+                    : "bg-white text-gray-700 hover:bg-blue-50 hover:text-[#079ADF] border border-gray-200 hover:border-blue-200"
                 }`}
                 style={{ fontSize: Clamp(0.9, 1.1) }}
               >

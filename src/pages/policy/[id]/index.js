@@ -52,7 +52,7 @@ const PolicySlugPage = ({ policyTopic }) => {
         <section className="relative bg-gray-50 py-[100px] padding-x">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+            <span className="inline-block bg-blue-50 text-[#079ADF] text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
               Policies & Guidelines
             </span>
             <h1
@@ -69,13 +69,13 @@ const PolicySlugPage = ({ policyTopic }) => {
           {/* Timeline Style */}
           <div className="relative max-w-4xl mx-auto">
             {/* Vertical Line */}
-            <div className="absolute left-5 top-0 w-[3px] h-full bg-green-200"></div>
+            <div className="absolute left-5 top-0 w-[3px] h-full bg-blue-200"></div>
 
             <div className="space-y-12">
               {policyTopic.item.map((policy, index) => (
                 <div key={index} className="relative flex items-start gap-6">
                   {/* Timeline Dot */}
-                  <div className="z-10 w-10 h-10 flex items-center justify-center rounded-full bg-green-600 text-white shadow-md">
+                  <div className="z-10 w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#079ADF] to-[#1A4087] text-white shadow-md">
                     <FaCheckCircle size={20} />
                   </div>
 

@@ -72,7 +72,7 @@ const Landing = () => {
             {/* Left Column */}
             <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-white bg-opacity-90 text-green-800 px-3 py-2 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium backdrop-blur-sm">
+              <div className="inline-flex items-center gap-2 bg-white bg-opacity-90 text-[#079ADF] px-3 py-2 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium backdrop-blur-sm">
                 <DiCssdeck size={16} className="sm:w-5 sm:h-5" />
                 <span className="hidden xs:inline">
                   Durham Region Healthcare
@@ -83,7 +83,7 @@ const Landing = () => {
               {/* Main Heading */}
               <div className="space-y-3 sm:space-y-4">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                  Welcome to <span className="text-green-400">Care4You</span>
+                  Welcome to <span className="text-[#079ADF]">Care4You</span>
                   <br className="hidden sm:block" />
                   <span className="sm:hidden"> </span>Medical Centre
                 </h1>
@@ -113,8 +113,8 @@ const Landing = () => {
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-green-600 font-bold text-xs sm:text-sm">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-[#079ADF] font-bold text-xs sm:text-sm">
                       V
                     </span>
                   </div>
@@ -130,7 +130,7 @@ const Landing = () => {
               </div>
 
               {/* Pharmacy Info */}
-              <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-4 sm:p-6 text-white">
+              <div className="bg-gradient-to-r from-[#079ADF] to-[#1A4087] rounded-2xl p-4 sm:p-6 text-white">
                 <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">
                   East Whitby IDA Pharmacy
                 </h2>
@@ -153,8 +153,8 @@ const Landing = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {linkData.map(({ href, text }, index) => (
                   <Link key={index} href={href} className="group">
-                    <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 sm:p-5 shadow-lg border border-white border-opacity-20 hover:shadow-xl hover:border-green-300 hover:bg-opacity-20 transition-all duration-300 group-hover:scale-105">
-                      <p className="text-sm sm:text-base font-medium text-white text-center group-hover:text-green-300 leading-tight">
+                    <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 sm:p-5 shadow-lg border border-white border-opacity-20 hover:shadow-xl hover:border-[#079ADF] hover:bg-opacity-20 transition-all duration-300 group-hover:scale-105">
+                      <p className="text-sm sm:text-base font-medium text-white text-center group-hover:text-[#079ADF] leading-tight">
                         {text}
                       </p>
                     </div>

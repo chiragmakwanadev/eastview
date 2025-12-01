@@ -29,7 +29,7 @@ const NewsSection = () => {
     <section className="bg-gray-50 py-20">
       {/* Header */}
       <div className="text-center mb-16">
-        <span className="inline-block bg-green-100 text-green-700 text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
+        <span className="inline-block bg-blue-50 text-[#079ADF] text-[14px] md:text-[15px] px-4 py-1 rounded-full font-medium mb-4">
           Care4You Updates
         </span>
         <h2
@@ -58,7 +58,7 @@ const NewsSection = () => {
               href={`/news/${featured.id}`}
               className="absolute bottom-4 right-4"
             >
-              <button className="bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-lg transition duration-200">
+              <button className="bg-[#079ADF] hover:bg-[#1A4087] text-white px-5 py-2 rounded-lg transition duration-200">
                 Read More
               </button>
             </Link>
@@ -81,7 +81,7 @@ const NewsSection = () => {
                 </p>
                 <p className="text-gray-400 text-xs">{news.date}</p>
                 <Link href={`/news/${news.id}`} className="mt-3">
-                  <button className="w-full bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg transition duration-200">
+                  <button className="w-full bg-[#079ADF] hover:bg-[#1A4087] text-white px-4 py-2 rounded-lg transition duration-200">
                     Read More
                   </button>
                 </Link>
@@ -98,7 +98,7 @@ const NewsSection = () => {
               onClick={() => handlePageChange(idx + 1)}
               className={`px-4 py-2 rounded-lg border font-medium ${
                 currentPage === idx + 1
-                  ? "bg-green-700 text-white border-green-700"
+                  ? "bg-[#079ADF] text-white border-[#079ADF]"
                   : "bg-white text-gray-700 hover:bg-gray-200 border-gray-300"
               }`}
             >

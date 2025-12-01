@@ -27,15 +27,15 @@ const Header = () => {
       <div className="flex justify-between items-center px-4 sm:px-6 lg:px-8 xl:px-36 py-3 sm:py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <img
-            src="/images/carelogo.png"
+          {/* <img
+            src="/images/carelogo.jpeg"
             alt="Logo"
             className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
-          />
+          /> */}
           <img
-            src="/images/carelogo2.png"
+            src="/images/carelogo2.jpeg"
             alt="Logo"
-            className="sm:h-10 lg:h-12"
+            className="sm:h-10 lg:h-16"
           />
           {/* <span className="font-bold text-sm sm:text-base lg:text-lg text-gray-900 xs:inline">
             Care4You Medical
@@ -65,14 +65,14 @@ const Header = () => {
                 "_blank"
               )
             }
-            className="px-3 py-1.5 lg:px-5 lg:py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full shadow-lg hover:scale-105 transition transform text-xs lg:text-sm font-medium"
+            className="px-3 py-1.5 lg:px-5 lg:py-2 bg-gradient-to-r from-[#079ADF] to-[#1A4087] text-white rounded-full shadow-lg hover:scale-105 transition transform text-xs lg:text-sm font-medium"
           >
             <span className="hidden lg:inline">Book Appointment</span>
             <span className="lg:hidden">Book</span>
           </button>
           <Link
             href="https://www.bookmyshot.com/9054351100"
-            className="px-3 py-1.5 lg:px-5 lg:py-2 border border-green-600 text-green-700 rounded-full shadow hover:bg-green-50 transition text-xs lg:text-sm font-medium"
+            className="px-3 py-1.5 lg:px-5 lg:py-2 border border-[#079ADF] text-[#079ADF] rounded-full shadow hover:bg-blue-50 transition text-xs lg:text-sm font-medium"
           >
             Pharmacy
           </Link>
@@ -119,13 +119,13 @@ const Header = () => {
                 "_blank"
               )
             }
-            className="mt-4 px-5 py-2 bg-green-600 text-white rounded-full shadow-lg hover:scale-105 transition transform"
+            className="mt-4 px-5 py-2 bg-gradient-to-r from-[#079ADF] to-[#1A4087] text-white rounded-full shadow-lg hover:scale-105 transition transform"
           >
             Book Appointment
           </button>
           <Link
             href="https://www.bookmyshot.com/9054351100"
-            className="mt-2 px-5 py-2 border border-green-600 text-green-700 rounded-full shadow hover:bg-green-50 transition text-center block"
+            className="mt-2 px-5 py-2 border border-[#079ADF] text-[#079ADF] rounded-full shadow hover:bg-blue-50 transition text-center block"
           >
             Pharmacy
           </Link>
